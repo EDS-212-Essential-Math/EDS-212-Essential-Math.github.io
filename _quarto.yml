@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  favicon: images/favicon.png
   navbar:
     title: "EDS 212"
     right:
@@ -13,18 +14,18 @@ website:
         target: _blank
       - text: daily materials
         menu: 
-          - text: day 1 (8/5)
+          - text: day 1 (8/4)
             href: course-materials/day1.qmd
-          - text: day 2 (8/6)
+          - text: day 2 (8/5)
             href: course-materials/day2.qmd
-          - text: day 3 (8/7)
+          - text: day 3 (8/6)
             href: course-materials/day3.qmd
-          - text: day 4 (8/8)
+          - text: day 4 (8/7)
             href: course-materials/day4.qmd
-          - text: day 5 (8/9)
+          - text: day 5 (8/8)
             href: course-materials/day5.qmd
       - icon: github
-        href: https://github.com/samanthacsik/EDS-212-essential-math
+        href: https://github.com/EDS-212-Essential-Math
         target: _blank
   page-footer:
     background: dark

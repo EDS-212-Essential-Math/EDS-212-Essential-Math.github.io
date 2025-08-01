@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -8,7 +9,7 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>day4.1-slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -157,7 +158,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -331,7 +333,7 @@
 <p><span class="custom-title">EDS 212: Day 4, Lecture 1</span></p>
 <p><span class="custom-subtitle"><em>Linear algebra continued</em></span></p>
 <hr class="hr-teal">
-<p><span class="custom-subtitle3">August 8<sup>th</sup>, 2024</span></p>
+<p><span class="custom-subtitle3">August 7<sup>th</sup>, 2024</span></p>
 </section>
 <section id="part1" class="slide level2" data-menu-title="Part 1">
 <h2></h2>
@@ -370,7 +372,7 @@
 <p><span class="body-text-l">Add or subtract the corresponding elements (by matrix position) to create a new matrix of the same dimensions.</span></p>
 <p><br></p>
 
-<img data-src="images/matrix_addition.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/matrix_addition.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="scalar-mult" class="slide level2" data-menu-title="Scalar multiplication">
 <h2></h2>
 <p><span class="slide-title">Scalar multiplication</span></p>
@@ -382,7 +384,7 @@
 <p>For example:</p>
 </div>
 
-<img data-src="images/scalar_multiplier.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/scalar_multiplier.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="dot-product" class="slide level2" data-menu-title="Dot product">
 <h2></h2>
 <p><span class="slide-title">Recall: dot product</span></p>
@@ -404,17 +406,20 @@
 <p><span class="body-text-l">We find the <em>dot product</em> of row <span class="math inline">\(\cdot\)</span> column vectors:</span></p>
 <p><br></p>
 
-<img data-src="images/matrix_multiplication.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/matrix_multiplication.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="practice" class="slide level2" data-menu-title="Pratice">
 <h2></h2>
 <p><span class="slide-title">Practice problems</span></p>
 <hr>
 <p><br></p>
 
-<img data-src="images/matrix_multiplication_problem_1.png" style="width:100.0%" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="images/matrix_multiplication_problem_1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
 <p>(2)(1)+(-1)(6)…(2)(5)+(-1)(-3)</p>
 <p>(0)(1)+(4)(6)…(0)(5)+(4)(-3)</p>
-<p><span class="math inline">\(solution = \begin{bmatrix}  -4 &amp; 13 \\  24 &amp; -12 \end{bmatrix}\)</span></p>
+<p><span class="math inline">\(solution = \begin{bmatrix}
+  -4 &amp; 13 \\
+  24 &amp; -12
+\end{bmatrix}\)</span></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -435,7 +440,7 @@
 <p><span class="body-text-m">What do you think the output matrix would contain if you were multiplying the following?</span></p>
 <p><br></p>
 
-<img data-src="images/matrix_multiplication_unequal.png" style="width:100.0%" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="images/matrix_multiplication_unequal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
 <p>The resulting matrix has dimensions which are equal to the number of the rows of the first matrix and the number of columns of the second matrix.</p>
 <p>AG+BI+CK…AH+BJ+CL</p>
 <p>DG+EI+FK…DH+EJ+FL</p>
@@ -457,10 +462,13 @@
 <hr>
 <p><br></p>
 
-<img data-src="images/matrix_multiplication_practice_2.png" style="width:100.0%" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="images/matrix_multiplication_practice_2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
 <p>(0)(-1)+(2)(5)+(-1)(-3)…(0)(0)+(2)(1)+(-1)(6)</p>
 <p>(3)(-1)+(4)(5)+(-2)(-3)…(3)(0)+(4)(1)+(-2)(6)</p>
-<p><span class="math inline">\(solution = \begin{bmatrix}  13 &amp; -4 \\  23 &amp; -8 \end{bmatrix}\)</span></p>
+<p><span class="math inline">\(solution = \begin{bmatrix}
+  13 &amp; -4 \\
+  23 &amp; -8
+\end{bmatrix}\)</span></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -481,7 +489,7 @@
 <p><span class="body-text-m">A <strong>diagonal matrix</strong> is (almost always) a square matrix (<span class="math inline">\(m\)</span> = <span class="math inline">\(n\)</span>) where only elements on the diagonal are non-zero values.</span></p>
 <p><br></p>
 
-<img data-src="images/diagonal_matrix.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/diagonal_matrix.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="mult-diag-matrix" class="slide level2" data-menu-title="Multiply by diagonal matrix">
 <h2></h2>
 <p><span class="slide-title">What happens when we multiply a matrix by a diagonal matrix?</span></p>
@@ -490,7 +498,7 @@
 <p><span class="body-text-m">A diagonal matrix is also called a <em>scaling matrix</em> because it scales rows proportionally, but not by the same value:</span></p>
 <p><br></p>
 
-<img data-src="images/diagonal_matrix_scaling.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/diagonal_matrix_scaling.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="sys-eq" class="slide level2" data-menu-title="Systems of equations">
 <h2></h2>
 <p><span class="slide-title">Matrices as systems of equations</span></p>
@@ -518,7 +526,7 @@
 <p><br></p>
 <p><span class="body-text-m">The matrix form of this system of equations looks as follows:</span></p>
 
-<img data-src="images/system_equations.png" style="width:100.0%" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="images/system_equations.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
 <p>We can write systems of equations in matrix form as <span class="math inline">\(Ax=b\)</span>, where:</p>
 <ul>
 <li><span class="math inline">\(A\)</span> is the coefficient matrix</li>
@@ -596,7 +604,7 @@ x \\
 </ul>
 </div>
 
-<img data-src="images/leslie_matrix.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/leslie_matrix.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="est-as-eq1" class="slide level2" data-menu-title="Estimates as equations 1">
 <h2></h2>
 <p><span class="slide-title">Writing estimates as equations:</span></p>
@@ -675,19 +683,19 @@ x \\
 </div>
 <p><br></p>
 
-<img data-src="images/leslie_matrix_blank.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/leslie_matrix_blank.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="leslie-matrix" class="slide level2" data-menu-title="Leslie matrix">
 <h2></h2>
 <p><span class="slide-title">Leslie matrix</span></p>
 <hr>
 
-<img data-src="images/leslie_matrix_values.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/leslie_matrix_values.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="leslie-matrix-notes" class="slide level2" data-menu-title="Leslie matrix (notes)">
 <h2></h2>
 <p><span class="slide-title">Leslie matrix</span></p>
 <hr>
 
-<img data-src="images/leslie_matrix_values.png" style="width:100.0%" class="r-stretch quarto-figure-center"><ul>
+<img data-src="images/leslie_matrix_values.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><ul>
 <li>Each column is the age class at time <span class="math inline">\(t\)</span> and each row is the age class at time <span class="math inline">\(t+1\)</span></li>
 <li>Each entry represents a transition, or change in the # of individuals, from one age class to the next</li>
 <li>Fertilities are always in the first row, and represent the contributions to newborns from reproduction</li>
@@ -698,8 +706,10 @@ x \\
 <p>See <a href="https://global.oup.com/academic/product/a-primer-of-ecology-9780878933181?cc=ca&amp;lang=en&amp;">A Primer of Ecology</a>, by Nicholas J. Gotelli</p>
 </div>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
@@ -729,7 +739,6 @@ x \\
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -985,18 +994,7 @@ x \\
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1028,11 +1026,50 @@ x \\
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1042,8 +1079,17 @@ x \\
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1057,7 +1103,11 @@ x \\
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

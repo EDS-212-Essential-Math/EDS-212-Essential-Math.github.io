@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -8,7 +9,7 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>day3.1-slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -157,7 +158,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -331,7 +333,7 @@
 <p><span class="custom-title">EDS 212: Day 3, Lecture 1</span></p>
 <p><span class="custom-subtitle"><em>Integration and differential equations - reading, understanding, solving numerically in R</em></span></p>
 <hr class="hr-teal">
-<p><span class="custom-subtitle3">August 7<sup>th</sup>, 2024</span></p>
+<p><span class="custom-subtitle3">August 6<sup>th</sup>, 2024</span></p>
 </section>
 <section id="initial-conditions" class="slide level2" data-menu-title="Initial conditions">
 <h2></h2>
@@ -595,7 +597,7 @@
 <hr>
 <p><br></p>
 
-<img data-src="images/predator-prey-image.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p><br></p>
+<img data-src="images/predator-prey-image.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p><br></p>
 <div class="footer">
 <p>Adapted frrom Christopher Rackauckas, <a href="https://www.stochasticlifestyle.com/how-to-train-interpretable-neural-networks-that-accurately-extrapolate-from-small-data/"><em>Scientific machine learning: interpretable neural networks that accurately extrapolate from small data.</em></a> from the Stochastic Lifestyle blog.</p>
 </div>
@@ -618,7 +620,7 @@
 <p><span class="slide-title">Finding <span class="math inline">\(V(t)\)</span> and <span class="math inline">\(P(t)\)</span>?</span> <!-- [Finding $x(t)$ and $y(t)$?]{.slide-title} --></p>
 <hr>
 
-<img data-src="images/lotka-volterra.svg" style="width:100.0%" class="r-stretch quarto-figure-center"><div class="footer">
+<img data-src="images/lotka-volterra.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
 <p>Integration to find approximate solutions. <em>Image: <a href="https://mbe.modelica.university/behavior/equations/population/">Modelica by Example</a></em></p>
 </div>
 </section>
@@ -687,7 +689,7 @@
 <p><br></p>
 <p>We’ll create a table that estimates <span class="math inline">\(P\)</span> at increments of <span class="math inline">\(t\)</span> based on an approximation of the slope estimate <span class="math inline">\(\frac{dP}{dt}\)</span> . <strong>WHAT?</strong></p>
 <p><br></p>
-<p>It’s OK, follow along by hopping over the <a href="../interactive-sessions/interactive-session-3a.qmd">Interactive Session 3A</a> (and afterwards, we’ll learn how to use the <code>{deSolve}</code> package in R to make this process a lot easier).</p>
+<p>It’s OK, follow along by hopping over the <a href="../../course-materials/interactive-sessions/interactive-session-3a.html">Interactive Session 3A</a> (and afterwards, we’ll learn how to use the <code>{deSolve}</code> package in R to make this process a lot easier).</p>
 <!-- <br> -->
 <!-- ::: {.footer}  -->
 <!-- (Aside: For a great example using the $\frac{dy}{dx}=y$ example above, see this [Khan Academy intro to the Euler method](https://www.khanacademy.org/math/ap-calculus-bc/bc-differential-equations-new/bc-7-5/v/eulers-method)) -->
@@ -705,8 +707,10 @@
 <!-- A great resource: [Solving Lokta-Volterra equations in R](https://rstudio-pubs-static.s3.amazonaws.com/32888_197d1a1896534397b67fb04e0d4899ae.html) -->
 <!-- ::: -->
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
@@ -736,7 +740,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -992,18 +995,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1035,11 +1027,50 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1049,8 +1080,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1064,7 +1104,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

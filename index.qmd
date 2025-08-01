@@ -1,7 +1,7 @@
 ---
 title: "Essential Math in Environmental Data Science"
 subtitle: "Master of Environmental Data Science (MEDS)"
-description: "Summer 2024"
+description: "Summer 2025"
 title-block-banner: false
 toc: false
 ---
@@ -16,7 +16,7 @@ knitr::include_graphics("images/horst-brainstorm-montage.png")
 ```
 
 ::: {.gray-text .center-text}
-*Artwork by [Allison Horst](https://allisonhorst.com/)*
+*Artwork by [Allison Horst](https://allisonhorst.com/){:target="_blank"}*
 :::
 
 ## Course Description
@@ -36,32 +36,10 @@ The goal of EDS 212 (Essential Math in Environmental Data Science) is to prepare
 <br>
 
 ::: {.grid}
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-md-6}
 
 ::: {.center-text .body-text-l}
-**Co-Instructor**
-:::
-
-```{r}
-#| eval: true 
-#| echo: false
-#| fig-align: "center"
-#| out-width: "45%" 
-knitr::include_graphics("images/sam.png")
-```
-
-::: {.center-text}
-[**Sam Csik**]{.teal-text}  
-**Email:** [scsik@ucsb.edu](mailto::scsik@ucsb.edu)  
-**Learn more:** [samanthacsik.github.io](https://samanthacsik.github.io/)  
-:::
-
-:::
-
-::: {.g-col-12 .g-col-md-4}
-
-::: {.center-text .body-text-l}
-**Co-Instructor**
+**Instructor**
 :::
 
 ```{r}
@@ -75,12 +53,12 @@ knitr::include_graphics("images/ruth.png")
 ::: {.center-text}
 [**Ruth Oliver**]{.teal-text}  
 **Email:** [rutholiver@ucsb.edu](mailto::rutholiver@ucsb.edu)  
-**Learn more:** [ryoliver-lab.github.io](https://ryoliver-lab.github.io/)  
+**Learn more:** [oliverlab.org](https://oliverlab.org/){target="_blank"}  
 :::
 
 :::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-md-6}
 
 ::: {.center-text .body-text-l}
 **TA**
@@ -91,13 +69,13 @@ knitr::include_graphics("images/ruth.png")
 #| echo: false
 #| fig-align: "center"
 #| out-width: "45%" 
-knitr::include_graphics("images/anna.png")
+knitr::include_graphics("images/alessandra.png")
 ```
 
 ::: {.center-text}
-[**Anna Pede**]{.teal-text}  
-**Email:** [acostolapede@ucsb.edu](mailto::acostolapede@ucsb.edu)   
-**Learn more:** [Bren profile](https://bren.ucsb.edu/people/anna-costola-pede)
+[**Alessandra Vidal Meza**]{.teal-text}  
+**Email:** [avidalmeza@bren.ucsb.edu](mailto::avidalmeza@bren.ucsb.edu)   
+**Learn more:** [avidalmeza.github.io](https://avidalmeza.github.io/){target="_blank"}
 :::
 
 :::
@@ -105,4 +83,4 @@ knitr::include_graphics("images/anna.png")
 
 ## Acknowledgements
 
-EDS 212 was originally developed and taught by [Allison Horst](https://allisonhorst.github.io/). This new website houses materials which are *heavily* reused, adapted from, and inspired by Allison's original work.
+EDS 212 was originally developed and taught by [Allison Horst](https://allisonhorst.github.io/){target="_blank"}. This new website houses materials which are *heavily* reused, adapted from, and inspired by Allison's original work.

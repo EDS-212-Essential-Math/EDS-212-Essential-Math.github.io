@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -8,7 +9,7 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>day5.2-slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +31,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -41,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -222,7 +223,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -396,14 +398,14 @@
 <p><span class="custom-title">EDS 212: Day 5, Lecture 2</span></p>
 <p><span class="custom-subtitle"><em>Probability continued, intuition for hypothesis tests, and Boolean algebra</em></span></p>
 <hr class="hr-teal">
-<p><span class="custom-subtitle3">August 9<sup>th</sup>, 2024</span></p>
+<p><span class="custom-subtitle3">August 8<sup>th</sup>, 2024</span></p>
 </section>
 <section id="abraham-wald" class="slide level2" data-menu-title="Abraham Wald">
 <h2></h2>
 <p><span class="slide-title">Abraham Wald and survivorship bias</span></p>
 <hr>
 
-<img data-src="images/abraham_wald.png" style="width:100.0%" class="r-stretch quarto-figure-center"><div class="footer">
+<img data-src="images/abraham_wald.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
 <p>Image source: <a href="https://en.wikipedia.org/wiki/Survivorship_bias">Wikipedia</a></p>
 </div>
 <aside class="notes">
@@ -448,39 +450,39 @@
 <section id="ttest1" class="slide level2" data-menu-title="T-Test 1">
 <h2></h2>
 
-<img data-src="images/t_test_1.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_1.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest2" class="slide level2" data-menu-title="T-Test 2">
 <h2></h2>
 
-<img data-src="images/t_test_2.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_2.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest3" class="slide level2" data-menu-title="T-Test 3">
 <h2></h2>
 
-<img data-src="images/t_test_3.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_3.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest4" class="slide level2" data-menu-title="T-Test 4">
 <h2></h2>
 
-<img data-src="images/t_test_4.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_4.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest5" class="slide level2" data-menu-title="T-Test 5">
 <h2></h2>
 
-<img data-src="images/t_test_5.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_5.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest6" class="slide level2" data-menu-title="T-Test 6">
 <h2></h2>
 
-<img data-src="images/t_test_6.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_6.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest7" class="slide level2" data-menu-title="T-Test 7">
 <h2></h2>
 
-<img data-src="images/t_test_7.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_7.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="ttest8" class="slide level2" data-menu-title="T-Test 8">
 <h2></h2>
 
-<img data-src="images/t_test_8.jpg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/t_test_8.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="type1" class="slide level2" data-menu-title="Type 1 errors">
 <h2></h2>
 
-<img data-src="images/type_1_errors.png" style="width:100.0%" class="r-stretch quarto-figure-center"><div class="footer">
+<img data-src="images/type_1_errors.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
 <p>Artwork by <a href="https://allisonhorst.com/">Allison Horst</a></p>
 </div>
 <aside class="notes">
@@ -501,7 +503,7 @@
 <h2></h2>
 <p><br></p>
 
-<img data-src="images/type_2_errors.png" style="width:100.0%" class="r-stretch quarto-figure-center"><div class="footer">
+<img data-src="images/type_2_errors.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
 <p>Artwork by <a href="https://allisonhorst.com/">Allison Horst</a></p>
 </div>
 <aside class="notes">
@@ -626,16 +628,16 @@
 <p><br></p>
 <p><span class="body-text-m">Elements of a vector are tested separately, and the outcome is returned in a vector:</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>marmot <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
-<span id="cb2-2"><a href="#cb2-2"></a>marmot <span class="sc">==</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>marmot <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb2-2"><a></a>marmot <span class="sc">==</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE  TRUE FALSE</code></pre>
 </div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>pika <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">15</span>)</span>
-<span id="cb4-2"><a href="#cb4-2"></a>pika <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> pika <span class="sc">&gt;=</span> <span class="dv">9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>pika <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">15</span>)</span>
+<span id="cb4-2"><a></a>pika <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> pika <span class="sc">&gt;=</span> <span class="dv">9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  TRUE FALSE FALSE  TRUE  TRUE  TRUE</code></pre>
 </div>
@@ -649,12 +651,12 @@
 <p><span class="body-text-l">More on data types &amp; structures in EDS 221!</span></p>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>bear <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">6</span>) <span class="co"># Create a vector</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">is.na</span>(bear) <span class="co"># Check element by element for == NA?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>bear <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">6</span>) <span class="co"># Create a vector</span></span>
+<span id="cb6-2"><a></a><span class="fu">is.na</span>(bear) <span class="co"># Check element by element for == NA?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE FALSE FALSE  TRUE FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">is.numeric</span>(bear) <span class="co"># Checks entire *class* of vector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">is.numeric</span>(bear) <span class="co"># Checks entire *class* of vector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
@@ -672,10 +674,10 @@
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>eds212 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"John"</span>, <span class="st">"Cara"</span>, <span class="st">"Will"</span>, <span class="st">"Zoe"</span>)</span>
-<span id="cb10-2"><a href="#cb10-2"></a>eds223 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"John"</span>, <span class="st">"Melissa"</span>, <span class="st">"Cara"</span>, <span class="st">"Joe"</span>, <span class="st">"Zoe"</span>)</span>
-<span id="cb10-3"><a href="#cb10-3"></a></span>
-<span id="cb10-4"><a href="#cb10-4"></a>eds212 <span class="sc">%in%</span> eds223</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>eds212 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"John"</span>, <span class="st">"Cara"</span>, <span class="st">"Will"</span>, <span class="st">"Zoe"</span>)</span>
+<span id="cb10-2"><a></a>eds223 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"John"</span>, <span class="st">"Melissa"</span>, <span class="st">"Cara"</span>, <span class="st">"Joe"</span>, <span class="st">"Zoe"</span>)</span>
+<span id="cb10-3"><a></a></span>
+<span id="cb10-4"><a></a>eds212 <span class="sc">%in%</span> eds223</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  TRUE  TRUE FALSE  TRUE</code></pre>
 </div>
@@ -683,8 +685,10 @@
 <p><br></p>
 <p>*Keep this in mind - the distinction between <code>%in%</code> and <code>==</code> is major and important.</p>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
@@ -714,7 +718,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -970,18 +973,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1013,11 +1005,50 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1027,8 +1058,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1042,7 +1082,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

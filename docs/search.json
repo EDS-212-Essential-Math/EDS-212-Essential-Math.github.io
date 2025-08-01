@@ -4,7 +4,7 @@
     "href": "course-materials/day1.html#class-materials",
     "title": "Basic math review",
     "section": "Class materials",
-    "text": "Class materials\n\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 1 / morning\nBasic algebra review, units and unit conversions, exponents, logarithms\nMeet our R tools, basic operations, our first R function\n\n\nday 1 / afternoon\nFunctions (interpreting & evaluating), reading graphs, slope\nR projects, storing objects, creating vectors and sequences"
+    "text": "Class materials\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 1 / morning\nBasic algebra review, units and unit conversions, exponents, logarithms\nMeet our R tools, basic operations, our first R function\n\n\nday 1 / afternoon\nFunctions (interpreting & evaluating), reading graphs, slope\nR projects, storing objects, creating vectors and sequences"
   },
   {
     "objectID": "course-materials/day1.html#end-of-day-practice",
@@ -137,7 +137,7 @@
     "href": "course-materials/interactive-sessions/interactive-session-2a.html#a-bit-more-ggplot-fun",
     "title": "Interactive Session 2A",
     "section": "5. A bit more ggplot fun",
-    "text": "5. A bit more ggplot fun\nLet’s customize a graph a little bit. Here, we’ll use the penguins dataset from the {palmerpenguins} package.\nSome extras we’ll learn here are:\n\nAdding axis labels, titles & subtitles\nA few new graph types\nFaceting\nUpdating colors\n\n\n# load libraries ----\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n# create plot ----\nggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(x = \"Body mass (g)\",\n       y = \"Flipper length (mm)\",\n       title = \"Palmer penguin size measurements\",\n       subtitle = \"Palmer Archipelago, Antarctice (2007 - 2009)\",\n       caption = \"Collected by Dr. Kristen Gorman and colleagues at Palmer Station LTER\") +\n  facet_wrap(~island) +\n  theme_minimal()\n\n\n\n\n\nStage, commit, pull, push.\n\n\n\nEnd interactive session 2A"
+    "text": "5. A bit more ggplot fun\nLet’s customize a graph a little bit. Here, we’ll use the penguins dataset from the {palmerpenguins} package.\nSome extras we’ll learn here are:\n\nAdding axis labels, titles & subtitles\nA few new graph types\nFaceting\nUpdating colors\n\n\n# load libraries ----\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n# create plot ----\nggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(x = \"Body mass (g)\",\n       y = \"Flipper length (mm)\",\n       title = \"Palmer penguin size measurements\",\n       subtitle = \"Palmer Archipelago, Antarctice (2007 - 2009)\",\n       caption = \"Collected by Dr. Kristen Gorman and colleagues at Palmer Station LTER\") +\n  facet_wrap(~island) +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\nStage, commit, pull, push.\n\n\n\nEnd interactive session 2A"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-5a.html",
@@ -221,7 +221,7 @@
     "href": "course-materials/day2.html#class-materials",
     "title": "Derivatives",
     "section": "Class materials",
-    "text": "Class materials\n\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 2 / morning\nDefinition of the derivative\nDerivatives by hand and in R\n\n\nday 2 / afternoon\nHigher order & partial derivatives\nPartial & higher order derivatives in R"
+    "text": "Class materials\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 2 / morning\nDefinition of the derivative\nDerivatives by hand and in R\n\n\nday 2 / afternoon\nHigher order & partial derivatives\nPartial & higher order derivatives in R"
   },
   {
     "objectID": "course-materials/day2.html#end-of-day-practice",
@@ -242,7 +242,7 @@
     "href": "course-materials/day4.html#class-materials",
     "title": "Linear algebra and summary statistics",
     "section": "Class materials",
-    "text": "Class materials\n\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 4 / morning\nLinear algebra continued\nLinear algebra continued - vectors, matrices, a Leslie matrix example\n\n\nday 4 / afternoon\nEssential summary statistics and describing data\nData exploration and summary statistics - getting started"
+    "text": "Class materials\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 4 / morning\nLinear algebra continued\nLinear algebra continued - vectors, matrices, a Leslie matrix example\n\n\nday 4 / afternoon\nEssential summary statistics and describing data\nData exploration and summary statistics - getting started"
   },
   {
     "objectID": "course-materials/day4.html#end-of-day-practice",
@@ -368,7 +368,7 @@
     "href": "course-materials/slides/day3.1-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 3, Lecture 1\nIntegration and differential equations - reading, understanding, solving numerically in R\n\nAugust 7th, 2024"
+    "text": "EDS 212: Day 3, Lecture 1\nIntegration and differential equations - reading, understanding, solving numerically in R\n\nAugust 6th, 2024"
   },
   {
     "objectID": "course-materials/slides/day3.1-slides.html#initial-conditions",
@@ -501,7 +501,7 @@
     "href": "course-materials/slides/day2.1-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 2, Lecture 1\nDefinition of the derivative\n\nAugust 6th, 2024"
+    "text": "EDS 212: Day 2, Lecture 1\nDefinition of the derivative\n\nAugust 5th, 2024"
   },
   {
     "objectID": "course-materials/slides/day2.1-slides.html#overview",
@@ -718,7 +718,7 @@
     "href": "course-materials/slides/day5.2-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 5, Lecture 2\nProbability continued, intuition for hypothesis tests, and Boolean algebra\n\nAugust 9th, 2024"
+    "text": "EDS 212: Day 5, Lecture 2\nProbability continued, intuition for hypothesis tests, and Boolean algebra\n\nAugust 8th, 2024"
   },
   {
     "objectID": "course-materials/slides/day5.2-slides.html#abraham-wald",
@@ -830,7 +830,7 @@
     "href": "course-materials/slides/day4.2-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 4, Lecture 2\nEssential summary statistics and exploration\n\nAugust 8th, 2024"
+    "text": "EDS 212: Day 4, Lecture 2\nEssential summary statistics and exploration\n\nAugust 7th, 2024"
   },
   {
     "objectID": "course-materials/slides/day4.2-slides.html#data-types",
@@ -949,7 +949,7 @@
     "href": "course-materials/slides/day4.2-slides.html#var-stdev",
     "title": "",
     "section": "",
-    "text": "Variance and standard deviation\n\n\nBoth are measures of data spread.\n\n\n\n\nVariance\nReported in units of measurement squared\n\n\n\n\n\n\n\n\n\n\n\n\nStandard deviation\nReported in units of measurement\n\n\n\n\n\n\n\n\n\n\n\n\n\nStandard deviation is expressed in the same unit of measurement as the data, and therefore can be easier to interpret – for example it’s more intuitive to report that a group of people’s heights has a standard deviation of 3 inches, and less intuitive to report a variance of 9 square inches.\nVariances add (standard deviation doesn’t). For example, if we say that sex explains four square inches of variance, you know that 5 square inches are due to other factors.\nSee this discussion and this discussion\nThe variance measures the mathematical dispersion of data relative to the mean, and while theoretically correct, can be difficult to interpret in a real-world sense. Standard deviation is expressed in the same unit of measurement as the data (e.g. inches, rather than square inches), and therefore can be a more intuitive value to report."
+    "text": "Variance and standard deviation\n\n\nBoth are measures of data spread.\n\n\n\n\nVariance\nReported in units of measurement squared\n\n\n\n\n\n\n\n\n\n\n\n\nStandard deviation\nReported in units of measurement\n\n\n\n\n\n\n\n\n\n\n\n\nStandard deviation is expressed in the same unit of measurement as the data, and therefore can be easier to interpret – for example it’s more intuitive to report that a group of people’s heights has a standard deviation of 3 inches, and less intuitive to report a variance of 9 square inches.\nVariances add (standard deviation doesn’t). For example, if we say that sex explains four square inches of variance, you know that 5 square inches are due to other factors.\nSee this discussion and this discussion\nThe variance measures the mathematical dispersion of data relative to the mean, and while theoretically correct, can be difficult to interpret in a real-world sense. Standard deviation is expressed in the same unit of measurement as the data (e.g. inches, rather than square inches), and therefore can be a more intuitive value to report."
   },
   {
     "objectID": "course-materials/slides/day4.2-slides.html#variance",
@@ -1033,7 +1033,7 @@
     "href": "index.html#teaching-team",
     "title": "Essential Math in Environmental Data Science",
     "section": "Teaching Team",
-    "text": "Teaching Team\n\n\n\n\nCo-Instructor\n\n\n\n\n\n\n\n\n\n\n\nSam Csik\nEmail: scsik@ucsb.edu\nLearn more: samanthacsik.github.io\n\n\n\n\nCo-Instructor\n\n\n\n\n\n\n\n\n\n\n\nRuth Oliver\nEmail: rutholiver@ucsb.edu\nLearn more: ryoliver-lab.github.io\n\n\n\n\nTA\n\n\n\n\n\n\n\n\n\n\n\nAnna Pede\nEmail: acostolapede@ucsb.edu\nLearn more: Bren profile"
+    "text": "Teaching Team\n\n\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n\nRuth Oliver\nEmail: rutholiver@ucsb.edu\nLearn more: oliverlab.org\n\n\n\n\nTA\n\n\n\n\n\n\n\n\n\n\n\nAlessandra Vidal Meza\nEmail: avidalmeza@bren.ucsb.edu\nLearn more: avidalmeza.github.io"
   },
   {
     "objectID": "index.html#acknowledgements",
@@ -1047,7 +1047,7 @@
     "href": "course-materials/slides/day3.2-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 3, Lecture 2\nLinear algebra fundamentals\n\nAugust 7th, 2024"
+    "text": "EDS 212: Day 3, Lecture 2\nLinear algebra fundamentals\n\nAugust 6th, 2024"
   },
   {
     "objectID": "course-materials/slides/day3.2-slides.html#intro",
@@ -1159,14 +1159,14 @@
     "href": "course-materials/slides/day1.1-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 1, Lecture 1\nCourse intro, algebra refresher\n\nAugust 5th, 2024"
+    "text": "EDS 212: Day 1, Lecture 1\nCourse intro, algebra refresher\n\nAugust 4th, 2024"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#welcome",
     "href": "course-materials/slides/day1.1-slides.html#welcome",
     "title": "",
     "section": "",
-    "text": "Welcome to EDS 212 - Essential Math in Environmental Data Science\n\n\n\nInstructors: Ruth Oliver (rutholiver@ucsb.edu) & Sam Csik (scsik@ucsb.edu)\nCourse assistant: Anna Pede\nCourse hours: 10am - 4:30pm PST\nLocation: NCEAS 1st Floor Classroom\n\n\n\nLet’s take a look at the course syllabus together."
+    "text": "Welcome to EDS 212 - Essential Math in Environmental Data Science\n\n\n\nInstructor: Ruth Oliver (rutholiver@ucsb.edu)\nTeaching assistant: Alessandra Vidal Meza\nCourse hours: 10am - 4:30pm PST\nLocation: NCEAS 1st Floor Classroom\n\n\n\nLet’s take a look at the course syllabus together."
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#course-description",
@@ -1390,7 +1390,7 @@
     "href": "course-materials/slides/day2.2-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 2, Lecture 2\nDerivatives continued - higher order, partials, computation, & application\n\nAugust 6th, 2024"
+    "text": "EDS 212: Day 2, Lecture 2\nDerivatives continued - higher order, partials, computation, & application\n\nAugust 5th, 2024"
   },
   {
     "objectID": "course-materials/slides/day2.2-slides.html#deriv9",
@@ -1495,7 +1495,7 @@
     "href": "course-materials/slides/day5.1-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 5, Lecture 1\nBasic probability theory\n\nAugust 9th, 2024"
+    "text": "EDS 212: Day 5, Lecture 1\nBasic probability theory\n\nAugust 8th, 2024"
   },
   {
     "objectID": "course-materials/slides/day5.1-slides.html#monty-hall",
@@ -1607,7 +1607,7 @@
     "href": "course-materials/slides/day1.2-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 1, Lecture 2\nExponential functions, logarithms, graphs, average slope\n\nAugust 5th, 2024"
+    "text": "EDS 212: Day 1, Lecture 2\nExponential functions, logarithms, graphs, average slope\n\nAugust 4th, 2024"
   },
   {
     "objectID": "course-materials/slides/day1.2-slides.html#next-exps-logs",
@@ -1768,7 +1768,7 @@
     "href": "course-materials/slides/day4.1-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 4, Lecture 1\nLinear algebra continued\n\nAugust 8th, 2024"
+    "text": "EDS 212: Day 4, Lecture 1\nLinear algebra continued\n\nAugust 7th, 2024"
   },
   {
     "objectID": "course-materials/slides/day4.1-slides.html#part1",
@@ -1817,7 +1817,7 @@
     "href": "course-materials/slides/day4.1-slides.html#practice",
     "title": "",
     "section": "",
-    "text": "Practice problems\n\n\n\n\n(2)(1)+(-1)(6)…(2)(5)+(-1)(-3)\n(0)(1)+(4)(6)…(0)(5)+(4)(-3)\n\\(solution = \\begin{bmatrix}  -4 & 13 \\\\  24 & -12 \\end{bmatrix}\\)"
+    "text": "Practice problems\n\n\n\n\n(2)(1)+(-1)(6)…(2)(5)+(-1)(-3)\n(0)(1)+(4)(6)…(0)(5)+(4)(-3)\n\\(solution = \\begin{bmatrix}\n  -4 & 13 \\\\\n  24 & -12\n\\end{bmatrix}\\)"
   },
   {
     "objectID": "course-materials/slides/day4.1-slides.html#crit-thinking",
@@ -1831,7 +1831,7 @@
     "href": "course-materials/slides/day4.1-slides.html#try-one",
     "title": "",
     "section": "",
-    "text": "Let’s try one!\n\n\n\n\n(0)(-1)+(2)(5)+(-1)(-3)…(0)(0)+(2)(1)+(-1)(6)\n(3)(-1)+(4)(5)+(-2)(-3)…(3)(0)+(4)(1)+(-2)(6)\n\\(solution = \\begin{bmatrix}  13 & -4 \\\\  23 & -8 \\end{bmatrix}\\)"
+    "text": "Let’s try one!\n\n\n\n\n(0)(-1)+(2)(5)+(-1)(-3)…(0)(0)+(2)(1)+(-1)(6)\n(3)(-1)+(4)(5)+(-2)(-3)…(3)(0)+(4)(1)+(-2)(6)\n\\(solution = \\begin{bmatrix}\n  13 & -4 \\\\\n  23 & -8\n\\end{bmatrix}\\)"
   },
   {
     "objectID": "course-materials/slides/day4.1-slides.html#diagonal-matrix",
@@ -2034,7 +2034,7 @@
     "href": "course-materials/day5.html#class-materials",
     "title": "Basic probability theory and Boolean algebra",
     "section": "Class materials",
-    "text": "Class materials\n\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 5 / morning\nBasic probability theory\nMore Quarto customization, summary statistics continued, in-line reporting, collaboration\n\n\nday 5 / afternoon\nProbability continued, intuition for hypothesis tests, and Boolean algebra\nLogical and comparison operators in R\n\n\nday 5 / end-of-day\ncourse recap\nNA"
+    "text": "Class materials\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 5 / morning\nBasic probability theory\nMore Quarto customization, summary statistics continued, in-line reporting, collaboration\n\n\nday 5 / afternoon\nProbability continued, intuition for hypothesis tests, and Boolean algebra\nLogical and comparison operators in R\n\n\nday 5 / end-of-day\ncourse recap\nNA"
   },
   {
     "objectID": "course-materials/day5.html#end-of-day-practice",
@@ -2132,35 +2132,35 @@
     "href": "course-materials/interactive-sessions/interactive-session-2b.html",
     "title": "Interactive Session 2B",
     "section": "",
-    "text": "Find all partial derivatives of the following:\n\n\\[f(a, z, t)=3at^2-4t+5.1az-z^3\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{\\partial f}{\\partial a} = 3t^2 + 5.1z\\)\n\\(\\frac{\\partial f}{\\partial z} = 5.1a - 3z^2\\)\n\\(\\frac{\\partial f}{\\partial t} = 6at - 4\\)\n\n\n\n\nAlgal biomass (\\(B\\), grams) in a system is modeled by the following, where \\(h\\) is time (hours) and \\(T\\) is temperature (Celsius).\n\n\\[B(h, T)=0.6Th+2.1h^2\\] For water at 28 degrees, find an expression for how biomass is changing with respect to time (\\(\\frac{\\partial B}{\\partial h}\\)).\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{\\partial B}{\\partial h}=0.6T + (2)(2.1)h\\)\n\\(\\frac{\\partial B}{\\partial h}=(0.6)(28) + 4.2h\\)\n\\(\\frac{\\partial B}{\\partial h}=16.8 + 4.2h\\)\n\n\n\n\nFind the 3rd derivative of the following:\n\n\\[G(t)=2.2 + 3.1t-5.6t^4 + \\frac{4.3}{t^3}\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nFirst derivative:\n\n\\(G'(t) = 3.1 -(4)(5.6)t^3 +(-3)(4.3)t^{-4}\\)\n\\(G'(t) = 3.1 -22.4t^3 -12.9t^{-4}\\)\n\nSecond derivative:\n\n\\(G''(t) = 3.1. - (22.4)(3)t^2 -(12.9)(-4)t^{-5}\\)\n\\(G''(t) = 3.1. - 67.2t^2 -(12.9)(-4)t^{-5}\\)\n\\(G''(t) = -67.2t^2 + 51.6t^{-5}\\)\n\nThird derivative:\n\n\\(G'''(t) = -(67.2)(2)t + (51.6)(-5)t^{-6}\\)\n\\(G'''(t) = -134.4t - 258t^{-6}\\)"
+    "text": "Algal biomass (\\(B\\), grams) in a system is modeled by the following, where \\(h\\) is time (hours) and \\(T\\) is temperature (Celsius).\n\n\\[B(h, T)=0.6Th+2.1h^2\\] For water at 28 degrees, find an expression for how biomass is changing with respect to time (\\(\\frac{\\partial B}{\\partial h}\\)).\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{\\partial B}{\\partial h}=0.6T + (2)(2.1)h\\)\n\\(\\frac{\\partial B}{\\partial h}=(0.6)(28) + 4.2h\\)\n\\(\\frac{\\partial B}{\\partial h}=16.8 + 4.2h\\)"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2b.html#partial-derivatives-by-hand",
     "href": "course-materials/interactive-sessions/interactive-session-2b.html#partial-derivatives-by-hand",
     "title": "Interactive Session 2B",
     "section": "",
-    "text": "Find all partial derivatives of the following:\n\n\\[f(a, z, t)=3at^2-4t+5.1az-z^3\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{\\partial f}{\\partial a} = 3t^2 + 5.1z\\)\n\\(\\frac{\\partial f}{\\partial z} = 5.1a - 3z^2\\)\n\\(\\frac{\\partial f}{\\partial t} = 6at - 4\\)\n\n\n\n\nAlgal biomass (\\(B\\), grams) in a system is modeled by the following, where \\(h\\) is time (hours) and \\(T\\) is temperature (Celsius).\n\n\\[B(h, T)=0.6Th+2.1h^2\\] For water at 28 degrees, find an expression for how biomass is changing with respect to time (\\(\\frac{\\partial B}{\\partial h}\\)).\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{\\partial B}{\\partial h}=0.6T + (2)(2.1)h\\)\n\\(\\frac{\\partial B}{\\partial h}=(0.6)(28) + 4.2h\\)\n\\(\\frac{\\partial B}{\\partial h}=16.8 + 4.2h\\)\n\n\n\n\nFind the 3rd derivative of the following:\n\n\\[G(t)=2.2 + 3.1t-5.6t^4 + \\frac{4.3}{t^3}\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nFirst derivative:\n\n\\(G'(t) = 3.1 -(4)(5.6)t^3 +(-3)(4.3)t^{-4}\\)\n\\(G'(t) = 3.1 -22.4t^3 -12.9t^{-4}\\)\n\nSecond derivative:\n\n\\(G''(t) = 3.1. - (22.4)(3)t^2 -(12.9)(-4)t^{-5}\\)\n\\(G''(t) = 3.1. - 67.2t^2 -(12.9)(-4)t^{-5}\\)\n\\(G''(t) = -67.2t^2 + 51.6t^{-5}\\)\n\nThird derivative:\n\n\\(G'''(t) = -(67.2)(2)t + (51.6)(-5)t^{-6}\\)\n\\(G'''(t) = -134.4t - 258t^{-6}\\)"
+    "text": "Algal biomass (\\(B\\), grams) in a system is modeled by the following, where \\(h\\) is time (hours) and \\(T\\) is temperature (Celsius).\n\n\\[B(h, T)=0.6Th+2.1h^2\\] For water at 28 degrees, find an expression for how biomass is changing with respect to time (\\(\\frac{\\partial B}{\\partial h}\\)).\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{\\partial B}{\\partial h}=0.6T + (2)(2.1)h\\)\n\\(\\frac{\\partial B}{\\partial h}=(0.6)(28) + 4.2h\\)\n\\(\\frac{\\partial B}{\\partial h}=16.8 + 4.2h\\)"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2b.html#plotting-a-function-using-ggplot2",
     "href": "course-materials/interactive-sessions/interactive-session-2b.html#plotting-a-function-using-ggplot2",
     "title": "Interactive Session 2B",
     "section": "2. Plotting a function using {ggplot2}",
-    "text": "2. Plotting a function using {ggplot2}\n\nAdd a new Quarto doc (I’m saving mine as day2b-exercises.qmd) to your existing eds212-day2-GHpractice repository and follow along with the exercises, below.\n\n\nExample 1:\n\n\n\n\n\n\nUse keyboard shortcuts to create a function in R\n\n\n\n\n\nIn the code chunk below, we create an R function to plot the function, \\(f(x) = 3x^2 + 4\\). We can use a nifty keyboard shortcut to create a R function around this expression following these steps:\n\nWrite out the expression \\(3x^2 + 4\\) in a code chunk:\n\n\n3 * x^2 + 4\n\n\nHighlight the expression, then use the keyboard shortcut control + option + X (Mac) or Ctrl + Alt + X (Windows) to pop open a dialog box, which will prompt you to provide a name for your function (you can call it eq1).\nWatch your function appear! The shortcut will automatically add any variables from the body of your function (here, just x) as arguments inside function():\n\n\neq1 &lt;- function(x) {\n  3 * x^2 + 4\n}\n\n\n\n\n\n# load packages ----\nlibrary(tidyverse)\n\n# Define function ----\neq1 &lt;- function(x) {\n  3 * x^2 + 4\n} \n\n# create data frame with range of values to evaluate function over ----\nmy_data_range &lt;- data.frame(x = c(1, 100))\n\n# Plot it as a continuous curve over a specific range using `geom_function()` ----\n# `geom_function()` automatically evaluates the function over the range of x-values specified in the df and adds the resulting y-values to the plot\nggplot(data = my_data_range, aes(x = x)) + \n  geom_function(fun = eq1)\n\n\n\n\n\n\nExample 2:\n\n# Define function ----\neq2 &lt;- function(x) {\n  2.4 - 5*x^3 + 2.1*x^2\n} \n\n# Plot it as a continuous curve over a specific range using `geom_function()` (here, we define our data frame directly inside `ggplot()` ----\nggplot(data = data.frame(x = c(-50, 50)), aes(x = x)) + \n  geom_function(fun = eq2)"
+    "text": "2. Plotting a function using {ggplot2}\n\nAdd a new Quarto doc (I’m saving mine as day2b-exercises.qmd) to your existing eds212-day2-GHpractice repository and follow along with the exercises, below.\n\n\nExample 1:\n\n\n\n\n\n\nUse keyboard shortcuts to create a function in R\n\n\n\n\n\nIn the code chunk below, we create an R function to plot the function, \\(f(x) = 3x^2 + 4\\). We can use a nifty keyboard shortcut to create a R function around this expression following these steps:\n\nWrite out the expression \\(3x^2 + 4\\) in a code chunk:\n\n\n3 * x^2 + 4\n\n\nHighlight the expression, then use the keyboard shortcut control + option + X (Mac) or Ctrl + Alt + X (Windows) to pop open a dialog box, which will prompt you to provide a name for your function (you can call it eq1).\nWatch your function appear! The shortcut will automatically add any variables from the body of your function (here, just x) as arguments inside function():\n\n\neq1 &lt;- function(x) {\n  3 * x^2 + 4\n}\n\n\n\n\n\n# load packages ----\nlibrary(tidyverse)\n\n# Define function ----\neq1 &lt;- function(x) {\n  3 * x^2 + 4\n} \n\n# create data frame with range of values to evaluate function over ----\nmy_data_range &lt;- data.frame(x = c(1, 100))\n\n# Plot it as a continuous curve over a specific range using `geom_function()` ----\n# `geom_function()` automatically evaluates the function over the range of x-values specified in the df and adds the resulting y-values to the plot\nggplot(data = my_data_range, aes(x = x)) + \n  geom_function(fun = eq1)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdditional practice\n\n\n\n\n\nExample 2:\n\n# Define function ----\neq2 &lt;- function(x) {\n  2.4 - 5*x^3 + 2.1*x^2\n} \n\n# Plot it as a continuous curve over a specific range using `geom_function()` (here, we define our data frame directly inside `ggplot()` ----\nggplot(data = data.frame(x = c(-50, 50)), aes(x = x)) + \n  geom_function(fun = eq2)"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2b.html#plotting-derivatives",
     "href": "course-materials/interactive-sessions/interactive-session-2b.html#plotting-derivatives",
     "title": "Interactive Session 2B",
     "section": "3. Plotting derivatives",
-    "text": "3. Plotting derivatives\nLet’s look at the function: \\(C(t)=t^3\\)\nLet’s plot the function along with the first derivative:\n\n# Store the function C(t) ----\nct &lt;- function(t) {\n  t^3\n}\n\n# create data frame with range of values to evaluate function over ----\nmy_data_range &lt;- data.frame(t = c(-5, 5))\n\n# Plot it ----\nggplot(data = my_data_range, aes(x = t)) + \n  geom_function(fun = ct)\n\n\n\n# Find the derivative ----     \ndc_dt &lt;- D(expr = expression(t^3), name = \"t\")\ndc_dt\n\n3 * t^2\n\n# Store the derivative as a function ----\ndc_dt_fun &lt;- function(t) {\n  3 * t ^2\n}\n\n# Then plot them together ----\nggplot(data = my_data_range, aes(x = t)) + \n  geom_function(fun = ct, color = \"red\") +\n  geom_function(fun = dc_dt_fun, color = \"blue\")"
+    "text": "3. Plotting derivatives\nLet’s look at the function: \\(C(t)=t^3\\)\nLet’s plot the function along with the first derivative:\n\n# Store the function C(t) ----\nct &lt;- function(t) {\n  t^3\n}\n\n# create data frame with range of values to evaluate function over ----\nmy_data_range &lt;- data.frame(t = c(-5, 5))\n\n# Plot it ----\nggplot(data = my_data_range, aes(x = t)) + \n  geom_function(fun = ct)\n\n\n\n\n\n\n\n# Find the derivative ----     \ndc_dt &lt;- D(expr = expression(t^3), name = \"t\")\ndc_dt\n\n3 * t^2\n\n# Store the derivative as a function ----\ndc_dt_fun &lt;- function(t) {\n  3 * t ^2\n}\n\n# Then plot them together ----\nggplot(data = my_data_range, aes(x = t)) + \n  geom_function(fun = ct, color = \"red\") +\n  geom_function(fun = dc_dt_fun, color = \"blue\")"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2b.html#partial-derivatives-in-r",
     "href": "course-materials/interactive-sessions/interactive-session-2b.html#partial-derivatives-in-r",
     "title": "Interactive Session 2B",
     "section": "4. Partial derivatives in R",
-    "text": "4. Partial derivatives in R\nSpecify the variable you want to take the derivative with respect to.\n\\[f(x,y,z)=2xy-3x^2z^3\\]\nFind all partials, \\(\\frac{\\partial f}{\\partial x}\\), \\(\\frac{\\partial f}{\\partial y}\\) and \\(\\frac{\\partial f}{\\partial z}\\)\n\n# Create the expression ----\nf_xyz &lt;- expression(2 * x * y - 3 * x^2 * z^3)\n\n# Partial with respect to x ----\ndf_dx &lt;- D(expr = f_xyz, name = \"x\")\ndf_dx\n\n2 * y - 3 * (2 * x) * z^3\n\n# Partial with respect to y ----\ndf_dy &lt;- D(expr = f_xyz, name = \"y\")\ndf_dy\n\n2 * x\n\n# Partial with respect to z ---- \ndf_dz &lt;- D(expr = f_xyz, name = \"z\")\ndf_dz\n\n-(3 * x^2 * (3 * z^2))"
+    "text": "4. Partial derivatives in R\nSpecify the variable you want to take the derivative with respect to.\n\\[f(x,y,z)=2xy-3x^2z^3\\]\nFind partial, \\(\\frac{\\partial f}{\\partial x}\\):\n\n# Create the expression ----\nf_xyz &lt;- expression(2 * x * y - 3 * x^2 * z^3)\n\n# Partial with respect to x ----\ndf_dx &lt;- D(expr = f_xyz, name = \"x\")\ndf_dx\n\n2 * y - 3 * (2 * x) * z^3\n\n\n\n\n\n\n\n\nAdditional practice\n\n\n\n\n\nFind partials, \\(\\frac{\\partial f}{\\partial y}\\) and \\(\\frac{\\partial f}{\\partial z}\\):\n\n# Partial with respect to y ----\ndf_dy &lt;- D(expr = f_xyz, name = \"y\")\ndf_dy\n\n2 * x\n\n# Partial with respect to z ---- \ndf_dz &lt;- D(expr = f_xyz, name = \"z\")\ndf_dz\n\n-(3 * x^2 * (3 * z^2))"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2b.html#one-more-example",
@@ -2173,8 +2173,8 @@
     "objectID": "course-materials/interactive-sessions/interactive-session-2b.html#stage-commit-pull-and-push-your-changes-to-github",
     "href": "course-materials/interactive-sessions/interactive-session-2b.html#stage-commit-pull-and-push-your-changes-to-github",
     "title": "Interactive Session 2B",
-    "section": "6. Stage, commit, (pull) and push your changes to GitHub",
-    "text": "6. Stage, commit, (pull) and push your changes to GitHub\nFollow the same pattern that we practiced in today’s earlier interactive session (2A), and verify that it worked by checking out your GitHub repo.\n\n\nEnd interactive session 2B"
+    "section": "5. Stage, commit, (pull) and push your changes to GitHub",
+    "text": "5. Stage, commit, (pull) and push your changes to GitHub\nFollow the same pattern that we practiced in today’s earlier interactive session (2A), and verify that it worked by checking out your GitHub repo.\n\n\nEnd interactive session 2B"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-3a.html",
@@ -2195,7 +2195,7 @@
     "href": "course-materials/interactive-sessions/interactive-session-3a.html#numerical-approximation-using-desolveode-a-basic-starter",
     "title": "Interactive Session 3A",
     "section": "2. Numerical approximation using deSolve::ode() (a basic starter)",
-    "text": "2. Numerical approximation using deSolve::ode() (a basic starter)\n\n\n\n\n\n\nCreate a new R Project named eds212-day3a\n\n\n\nAdd either an R script or Quarto doc (your choice) to complete the following exercise in.\n\n\nLet’s say we have a system modeled by:\n\\[\\frac{dC}{dt}=\\lambda C^2-3.1\\delta\\] and we don’t know how to solve this analytically. Let’s use the {deSolve} package in R to help us find a solution numerically, given an initial condition at \\(C(0)=4.8\\) and for parameter values \\(\\lambda = 0.4\\) and \\(\\delta=0.06\\).\nHere’s what a numeric solution looks like with {deSolve}:\n\n# load packages ----\nlibrary(deSolve)\nlibrary(tidyverse)\n\nFirst, we’ll make a time sequence that we want to estimate numerical solutions over:\n\n# Create a time sequence ----\ntime_seq &lt;- seq(from = 0, to = 0.2, by = 0.001)\n\nThen, we’ll store the parameter(s) and initial conditions:\n\n# Set some parameter values (these can change - keep it in mind) ----\nparameter_example &lt;- c(lambda = 0.4, delta = 0.06)\n\n# Set the initial conditions ----\ninit_cond_example &lt;- c(C = 4.8)\n\nStore the differential equation as a function:\n\n# Prepare differential equation(s) as a function, which take three arguments aka inputs (a sequence of time steps, a vector of our initial conditions, and a vector of our parameter values) ----\ndf_equation_example &lt;- function(time_seq, init_cond_example, parameter_example) {\n  \n  # using our initial conditions and parameter values ....\n  with(as.list(c(init_cond_example, parameter_example)), {\n    \n    # ... estimate the numerical solutions to this differential equation....\n    dCdt = lambda * C^2 - 3.1 * delta\n    \n    # ...and return a list of approximated solutions calculated at each time step for all equations (here we only have 1 equation that we're solving for)\n    return(list(c(dCdt)))\n    \n  })\n}\n\n\n\n\n\n\n\nBreaking down this somewhat odd-looking function structure\n\n\n\n\n\nThe structure of our function body looks a bit different than what we’ve practiced in other recent exercises. Let’s break down the body of our function a bit to better understand what’s happening:\n\nc(init_cond_example, parameter_example) combines the initial conditions and parameter values into a single, named vector (both init_cond_example and parameter_example are named vectors)\nas.list(c(init_cond_example, parameter_example)) converts our named vector into a list, where each element can be accessed by name\n\nfor example, we can access the delta variable in our list using the syntax, (as.list(c(init_cond_example, parameter_example)))$delta\nwe cannot access delta by name when in vector format (e.g. c(init_cond_example, parameter_example)$delta)\n\nwith(as.list(c(init_cond_example, parameter_example)), { ... }) evaluates the block of code (inside {}) in an environment where the names in our list (i.g. C, lambda, delta) are treated as variables and can be directly referenced by name\n\n\n\n\nUse deSolve::ode() to approximate the solution numerically:\n\n# Find the approximate solution using `deSolve::ode()` ----\napprox_df_example &lt;- ode(y = init_cond_example,\n                         times = time_seq, \n                         func = df_equation_example, \n                         parms = parameter_example)\n\n# Check the class ----\nclass(approx_df_example)\n\n[1] \"deSolve\" \"matrix\" \n\n# We really want this to be a data frame for plotting (more to come in EDS 221) ----\napprox_df_example &lt;- data.frame(approx_df_example)\nclass(approx_df_example) # you might also consider looking at it using `View(approx_df_example)`\n\n[1] \"data.frame\"\n\n# Plot it ----\nggplot(data = approx_df_example, aes(x = time, y = C)) +\n  geom_point(size = 0.1)\n\n\n\n\nNow let’s try it for something a bit more interesting!"
+    "text": "2. Numerical approximation using deSolve::ode() (a basic starter)\n\n\n\n\n\n\nCreate a new R Project named eds212-day3a\n\n\n\nAdd either an R script or Quarto doc (your choice) to complete the following exercise in.\n\n\nLet’s say we have a system modeled by:\n\\[\\frac{dC}{dt}=\\lambda C^2-3.1\\delta\\] and we don’t know how to solve this analytically. Let’s use the {deSolve} package in R to help us find a solution numerically, given an initial condition at \\(C(0)=4.8\\) and for parameter values \\(\\lambda = 0.4\\) and \\(\\delta=0.06\\).\nHere’s what a numeric solution looks like with {deSolve}:\n\n# load packages ----\nlibrary(deSolve)\nlibrary(tidyverse)\n\nFirst, we’ll make a time sequence that we want to estimate numerical solutions over:\n\n# Create a time sequence ----\ntime_seq &lt;- seq(from = 0, to = 0.2, by = 0.001)\n\nThen, we’ll store the parameter(s) and initial conditions:\n\n# Set some parameter values (these can change - keep it in mind) ----\nparameter_example &lt;- c(lambda = 0.4, delta = 0.06)\n\n# Set the initial conditions ----\ninit_cond_example &lt;- c(C = 4.8)\n\nStore the differential equation as a function:\n\n# Prepare differential equation(s) as a function, which take three arguments aka inputs (a sequence of time steps, a vector of our initial conditions, and a vector of our parameter values) ----\ndf_equation_example &lt;- function(time_seq, init_cond_example, parameter_example) {\n  \n  # using our initial conditions and parameter values ....\n  with(as.list(c(init_cond_example, parameter_example)), {\n    \n    # ... estimate the numerical solutions to this differential equation....\n    dCdt = lambda * C^2 - 3.1 * delta\n    \n    # ...and return a list of approximated solutions calculated at each time step for all equations (here we only have 1 equation that we're solving for)\n    return(list(c(dCdt)))\n    \n  })\n}\n\n\n\n\n\n\n\nBreaking down this somewhat odd-looking function structure\n\n\n\n\n\nThe structure of our function body looks a bit different than what we’ve practiced in other recent exercises. Let’s break down the body of our function a bit to better understand what’s happening:\n\nc(init_cond_example, parameter_example) combines the initial conditions and parameter values into a single, named vector (both init_cond_example and parameter_example are named vectors)\nas.list(c(init_cond_example, parameter_example)) converts our named vector into a list, where each element can be accessed by name\n\nfor example, we can access the delta variable in our list using the syntax, (as.list(c(init_cond_example, parameter_example)))$delta\nwe cannot access delta by name when in vector format (e.g. c(init_cond_example, parameter_example)$delta)\n\nwith(as.list(c(init_cond_example, parameter_example)), { ... }) evaluates the block of code (inside {}) in an environment where the names in our list (i.g. C, lambda, delta) are treated as variables and can be directly referenced by name\n\n\n\n\nUse deSolve::ode() to approximate the solution numerically:\n\n# Find the approximate solution using `deSolve::ode()` ----\napprox_df_example &lt;- ode(y = init_cond_example,\n                         times = time_seq, \n                         func = df_equation_example, \n                         parms = parameter_example)\n\n# Check the class ----\nclass(approx_df_example)\n\n[1] \"deSolve\" \"matrix\" \n\n# We really want this to be a data frame for plotting (more to come in EDS 221) ----\napprox_df_example &lt;- data.frame(approx_df_example)\nclass(approx_df_example) # you might also consider looking at it using `View(approx_df_example)`\n\n[1] \"data.frame\"\n\n# Plot it ----\nggplot(data = approx_df_example, aes(x = time, y = C)) +\n  geom_point(size = 0.1)\n\n\n\n\n\n\n\n\nNow let’s try it for something a bit more interesting!"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-3a.html#fork-and-clone-a-repo",
@@ -2279,7 +2279,7 @@
     "href": "course-materials/day3.html#class-materials",
     "title": "Differential equations, intro to linear algebra",
     "section": "Class materials",
-    "text": "Class materials\n\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 3 / morning\nDifferential equations, and solving them numerically\nInterpreting differential equations, solving numerically\n\n\nday 3 / afternoon\nIntroduction to linear algebra basics\nMaking & basic algebra with vectors and matrices"
+    "text": "Class materials\n\n\n\n\n\n\n\n\n Session\n Lecture slides\n Interactive session\n\n\n\n\nday 3 / morning\nDifferential equations, and solving them numerically\nInterpreting differential equations, solving numerically\n\n\nday 3 / afternoon\nIntroduction to linear algebra basics\nMaking & basic algebra with vectors and matrices"
   },
   {
     "objectID": "course-materials/day3.html#end-of-day-practice",
@@ -2294,5 +2294,145 @@
     "title": "Differential equations, intro to linear algebra",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nEuler’s method, by Khan Academy – a video example of numerical approximation of a differential equation solution using Euler’s method\nEuler’s Method Differential Equations, Examples, Numerical Methods, Calculus, by The Organic Chemistry Tutor – a YouTube video on using Euler’s Method to find the solution to a differential equation\nVectors | Chapter 1, Essence of linear algebra, by 3Blue1Brown – a YouTube video covering vector fundamentals"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day2-key.html",
+    "href": "course-materials/eod-keys/eod-day2-key.html",
+    "title": "Day 2: Tasks & activities - KEY",
+    "section": "",
+    "text": "Put all notes away\nWith a partner, based on what you’ve learned, derive the definition of the derivative from scratch\nAt every step, describe what you are doing\nOnce you have the definition of the derivative, say out loud (each person) what we’re doing mathematically every time we find the derivative\n\n\n\n\n\n\n\nSolution\n\n\n\n\nWe know how to calculate the slope of a line, using the formula, \\(slope = \\frac{y_2-y_1}{x_2-x_1}\\) (change in rise over run). If we have a non-linear function, however, the slope is changing at each point along that function.\nIf we have a point on a curve, \\((x, f(x))\\) and a second point on that same function, some horizontal distance (\\(h\\)) away, \\((x+h, f(x+h))\\), we can estimate the average slope between those two points using the same slope formula, \\(average\\; slope = \\frac{f(x+h) - f(x)}{x+h-x} = \\frac{f(x+h) - f(x)}{h}\\)\nHowever, we don’t want the average slope, we want the exact slope. We can calculate this by moving our second point along the function, closer and closer to our first point, until the distance between them (\\(h\\)) gets finitely small (\\(h \\rightarrow 0\\)). By doing so, the average slope becomes the instantaneous slope at a single point (essentially finding the slope at the line tangent to our point).\nThe expression for the instantaneous slope at any point on a function is called the derivative:\n\n\\[\\frac{df}{dx} = \\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\]"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day2-key.html#section-1-small-groups-derive-the-definition-of-the-derivative",
+    "href": "course-materials/eod-keys/eod-day2-key.html#section-1-small-groups-derive-the-definition-of-the-derivative",
+    "title": "Day 2: Tasks & activities - KEY",
+    "section": "",
+    "text": "Put all notes away\nWith a partner, based on what you’ve learned, derive the definition of the derivative from scratch\nAt every step, describe what you are doing\nOnce you have the definition of the derivative, say out loud (each person) what we’re doing mathematically every time we find the derivative\n\n\n\n\n\n\n\nSolution\n\n\n\n\nWe know how to calculate the slope of a line, using the formula, \\(slope = \\frac{y_2-y_1}{x_2-x_1}\\) (change in rise over run). If we have a non-linear function, however, the slope is changing at each point along that function.\nIf we have a point on a curve, \\((x, f(x))\\) and a second point on that same function, some horizontal distance (\\(h\\)) away, \\((x+h, f(x+h))\\), we can estimate the average slope between those two points using the same slope formula, \\(average\\; slope = \\frac{f(x+h) - f(x)}{x+h-x} = \\frac{f(x+h) - f(x)}{h}\\)\nHowever, we don’t want the average slope, we want the exact slope. We can calculate this by moving our second point along the function, closer and closer to our first point, until the distance between them (\\(h\\)) gets finitely small (\\(h \\rightarrow 0\\)). By doing so, the average slope becomes the instantaneous slope at a single point (essentially finding the slope at the line tangent to our point).\nThe expression for the instantaneous slope at any point on a function is called the derivative:\n\n\\[\\frac{df}{dx} = \\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\]"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day2-key.html#section-2-derivatives-by-hand",
+    "href": "course-materials/eod-keys/eod-day2-key.html#section-2-derivatives-by-hand",
+    "title": "Day 2: Tasks & activities - KEY",
+    "section": "Section 2: Derivatives by hand",
+    "text": "Section 2: Derivatives by hand\n\nBy hand and using derivative rules, find the third derivative of \\[G(t)=2.2 + 3.1t-5.6t^4 + \\frac{4.3}{t^3}\\] \n\n\n\n\n\n\n\nSolution\n\n\n\nFirst derivative: \\[G'(t) = 3.1 -(4)(5.6)t^3 +(-3)(4.3)t^{-4}\\] \\[G'(t) = 3.1 -22.4t^3 -12.9t^{-4}\\]\nSecond derivative: \\[G''(t) = 3.1. - (22.4)(3)t^2 -(12.9)(-4)t^{-5}\\] \\[G''(t) = 3.1. - 67.2t^2 -(12.9)(-4)t^{-5}\\] \\[G''(t) = -67.2t^2 + 51.6t^{-5}\\]\nThird derivative: \\[G'''(t) = -(67.2)(2)t + (51.6)(-5)t^{-6}\\] \\[G'''(t) = -134.4t - 258t^{-6}\\]"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day2-key.html#section-3-derivatives-in-r",
+    "href": "course-materials/eod-keys/eod-day2-key.html#section-3-derivatives-in-r",
+    "title": "Day 2: Tasks & activities - KEY",
+    "section": "Section 3: Derivatives in R",
+    "text": "Section 3: Derivatives in R\n\nCreate a new version-controlled R Project\n\nCreate a new R Project (named eds212-day2-tasks) (or using a naming convention you choose for all EDS 212 projects)\nCreate a new Quarto document in the project\nAttach the {tidyverse} and {palmerpenguins} packages with library(package_name) (note: you may need to install {palmerpenguins} - remember install.packages(\"packagename\"))\nRender (save your .qmd as eds212_day2_activities.qmd, or follow a naming convention you’ve decided on)\nUse usethis::use_git() and usethis::use_github() to make your project a version-controlled repo, with an upstream GitHub repo\n\n\n\nFind derivatives using R\n\nIn your Quarto document, find the derivative expression and slope at the indicated value for each the following functions in R (each in a separate code chunk):\n\nFind the slope of \\(f(x)=x^2\\) at \\(x = 3\\)\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n# create an expression ----\nexpression1 &lt;- expression(x^2)\n\n# find derivative with respect to x using `D()` ----\nderiv1 &lt;- D(expression1, \"x\")\n\n# check it out ----\nderiv1\n\n2 * x\n\n# evaluate it at x = 3 ----\nx &lt;- 3\n\neval(deriv1)\n\n[1] 6\n\n\n\n\n\nFind the slope of \\(P(a)=2(3a+2)^4-5\\) at \\(a = 1.2\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n# create an expression ----\nexpression2 &lt;- expression(2 * (3 * a + 2)^4 - 5)\n\n# find derivative with respect to x using `D()` ----\nderiv2 &lt;- D(expression2, \"a\")\n\n# check it out ----\nderiv2\n\n2 * (4 * (3 * (3 * a + 2)^3))\n\n# evaluate it at x = 3 ----\na &lt;- 1.2\n\neval(deriv2)\n\n[1] 4214.784\n\n\n\n\n\nRender, then stage, commit, pull, then push your changes to your repo on GitHub. Check your repo (refresh) to make sure the changes show up there."
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day2-key.html#section-4-make-another-penguin-plot",
+    "href": "course-materials/eod-keys/eod-day2-key.html#section-4-make-another-penguin-plot",
+    "title": "Day 2: Tasks & activities - KEY",
+    "section": "Section 4: Make another penguin plot",
+    "text": "Section 4: Make another penguin plot\n\nIn a new code chunk, create a ggplot graph of penguin bill length versus bill depth (using the penguins dataset in the {palmerpenguins} package), with point color dependent on species. You should attach the {tidyverse} and {palmerpenguins} package in your .qmd setup chunk if you haven’t already. Update labels and add a title.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n# install packages ----\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n# create ggplot ----\nggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  labs(title = \"Penguin bill sizes by species\", \n       x = \"Bill Length (mm)\",\n       y = \"Bill Depth (mm)\")\n\n\n\n\n\n\n\n\n\n\n\nIn a new code chunk, make a jitter plot of flipper length by species (species on the x-axis, flipper length on the y-axis). Update axis labels and add a title. See ?geom_jitter.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n# create ggplot ----\nggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +\n  geom_jitter() +\n  labs(title = \"Penguin flipper lengths by species\",\n       x = \"Species\",\n       y = \"Flipper Lengths (mm)\")\n\n\n\n\n\n\n\n\n\n\n\nRender your .qmd to check for reproducibility\nStage, commit, and push changes to the remote repo. Once you do, go to GitHub and check to see the changes are safely stored & tracked.\nGo back to your Quarto document in RStudio. Pull to make sure you have the same versions as in the remote repo. Make a change (anything you want - maybe change your graph colors, sizes, etc.), then stage, commit, & push changes to the remote repo to reinforce the steps. Check that changes are stored on GitHub.\nRepeat one more time - make a change to your plot, render, stage, commit & push. Check that your changes appear on GitHub.\n\n\nEnd Activity Session (Day 2)"
+  },
+  {
+    "objectID": "course-materials/eod-practice/eod-day2.html#section-2-derivatives-by-hand",
+    "href": "course-materials/eod-practice/eod-day2.html#section-2-derivatives-by-hand",
+    "title": "Day 2: Tasks & activities",
+    "section": "Section 2: Derivatives by hand",
+    "text": "Section 2: Derivatives by hand\n\nBy hand and using derivative rules, find the third derivative of \\[G(t)=2.2 + 3.1t-5.6t^4 + \\frac{4.3}{t^3}\\]"
+  },
+  {
+    "objectID": "course-materials/eod-practice/eod-day2.html#section-3-derivatives-in-r",
+    "href": "course-materials/eod-practice/eod-day2.html#section-3-derivatives-in-r",
+    "title": "Day 2: Tasks & activities",
+    "section": "Section 3: Derivatives in R",
+    "text": "Section 3: Derivatives in R\n\nCreate a new version-controlled R Project\n\nCreate a new R Project (named eds212-day2-tasks) (or using a naming convention you choose for all EDS 212 projects)\nCreate a new Quarto document in the project\nAttach the {tidyverse} and {palmerpenguins} packages with library(package_name) (note: you may need to install {palmerpenguins} - remember install.packages(\"packagename\"))\nRender (save your .qmd as eds212_day2_activities.qmd, or follow a naming convention you’ve decided on)\nUse usethis::use_git() and usethis::use_github() to make your project a version-controlled repo, with an upstream GitHub repo\n\n\n\nFind derivatives using R\n\nIn your Quarto document, find the derivative expression and slope at the indicated value for each the following functions in R (each in a separate code chunk):\n\nFind the slope of \\(f(x)=x^2\\) at \\(x = 3\\)\n\nFind the slope of \\(P(a)=2(3a+2)^4-5\\) at \\(a = 1.2\\)\n\nRender, then stage, commit, pull, then push your changes to your repo on GitHub. Check your repo (refresh) to make sure the changes show up there."
+  },
+  {
+    "objectID": "course-materials/eod-practice/eod-day2.html#section-4-make-another-penguin-plot",
+    "href": "course-materials/eod-practice/eod-day2.html#section-4-make-another-penguin-plot",
+    "title": "Day 2: Tasks & activities",
+    "section": "Section 4: Make another penguin plot",
+    "text": "Section 4: Make another penguin plot\n\nIn a new code chunk, create a ggplot graph of penguin bill length versus bill depth (using the penguins dataset in the {palmerpenguins} package), with point color dependent on species. You should attach the {tidyverse} and {palmerpenguins} package in your .qmd setup chunk if you haven’t already. Update labels and add a title.\nIn a new code chunk, make a jitter plot of flipper length by species (species on the x-axis, flipper length on the y-axis). Update axis labels and add a title. See ?geom_jitter.\nRender your .qmd to check for reproducibility\nStage, commit, and push changes to the remote repo. Once you do, go to GitHub and check to see the changes are safely stored & tracked.\nGo back to your Quarto document in RStudio. Pull to make sure you have the same versions as in the remote repo. Make a change (anything you want - maybe change your graph colors, sizes, etc.), then stage, commit, & push changes to the remote repo to reinforce the steps. Check that changes are stored on GitHub.\nRepeat one more time - make a change to your plot, render, stage, commit & push. Check that your changes appear on GitHub.\n\n\nEnd Activity Session (Day 2)"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day3-key.html",
+    "href": "course-materials/eod-keys/eod-day3-key.html",
+    "title": "Day 3: Tasks & activities - KEY",
+    "section": "",
+    "text": "Biomass (grams) in a reactor over time (hours) is described by:\n\n\\[B(t) = 0.4t^2 + 3.6\\]\n\n\nWhat is the biomass in the reactor after 4 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[B(4) = 0.4(4)^2+3.6 = 106\\;grams\\]\n\n\n\nWhat is the rate at which biomass is changing in the reactor at t = 3.2 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[\\frac{dB}{dt} = (2)(0.4)t\\] \\[\\frac{dB}{dt} = (2)(0.4)(3.2)\\]\n\\[\\frac{dB}{dt} = 2.56 \\frac{grams}{hour}\\]\n\n\n\n\n\nFor the vectors \\(\\vec a = (1,6)\\) and \\(\\vec b = (2, 4)\\):\n\nFind and sketch \\(\\vec a + \\vec b\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(\\vec a + \\vec b = (1+2, 6+4) = (3,10)\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind and sketch \\(\\vec b - \\vec a\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(\\vec b - \\vec a = (2-1, 4-6) = (-1, -2)\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind and sketch \\(2 \\vec a\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(2 \\vec a = 2 * (1,6) = (2, 12)\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind \\(\\vec a \\cdot \\vec b\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(\\vec a \\cdot \\vec b = (1)(2) + (6)(4) = 26\\)"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day3-key.html#part-1-by-hand-problems",
+    "href": "course-materials/eod-keys/eod-day3-key.html#part-1-by-hand-problems",
+    "title": "Day 3: Tasks & activities - KEY",
+    "section": "",
+    "text": "Biomass (grams) in a reactor over time (hours) is described by:\n\n\\[B(t) = 0.4t^2 + 3.6\\]\n\n\nWhat is the biomass in the reactor after 4 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[B(4) = 0.4(4)^2+3.6 = 106\\;grams\\]\n\n\n\nWhat is the rate at which biomass is changing in the reactor at t = 3.2 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[\\frac{dB}{dt} = (2)(0.4)t\\] \\[\\frac{dB}{dt} = (2)(0.4)(3.2)\\]\n\\[\\frac{dB}{dt} = 2.56 \\frac{grams}{hour}\\]\n\n\n\n\n\nFor the vectors \\(\\vec a = (1,6)\\) and \\(\\vec b = (2, 4)\\):\n\nFind and sketch \\(\\vec a + \\vec b\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(\\vec a + \\vec b = (1+2, 6+4) = (3,10)\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind and sketch \\(\\vec b - \\vec a\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(\\vec b - \\vec a = (2-1, 4-6) = (-1, -2)\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind and sketch \\(2 \\vec a\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(2 \\vec a = 2 * (1,6) = (2, 12)\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind \\(\\vec a \\cdot \\vec b\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(\\vec a \\cdot \\vec b = (1)(2) + (6)(4) = 26\\)"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day3-key.html#part-2-coding-practice",
+    "href": "course-materials/eod-keys/eod-day3-key.html#part-2-coding-practice",
+    "title": "Day 3: Tasks & activities - KEY",
+    "section": "Part 2: Coding practice",
+    "text": "Part 2: Coding practice\n\nCreate a new project (you may want to name it eds212-day3-tasks or something similar)\nSetup your local and remote repo using usethis::use_git() and usethis::use_github()\nIn a Quarto doc in your project:\n\n\nUsing the c() function, create and store two new vectors, called vec_a and vec_b, where \\(\\vec a = (1,6)\\) and \\(\\vec b = (2, 4)\\):\n\n\n\n\n\n\n\nSolution\n\n\n\n\nvec_a &lt;- c(1, 6)\nvec_b &lt;- c(2, 4)\n\n\n\n\nCheck your by-hand solutions from Part 1 by finding the following in R:\n\n\\(\\vec a + \\vec b\\)\n\\(\\vec b - \\vec a\\)\n\\(2 \\vec a\\)\n\\(\\vec a \\cdot \\vec b\\)\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\nvec_a + vec_b\n\n[1]  3 10\n\nvec_b - vec_a\n\n[1]  1 -2\n\n2 * vec_a\n\n[1]  2 12\n\nvec_a %*% vec_b\n\n     [,1]\n[1,]   26\n\n\n\n\n\nSave your quarto doc and Render\nOpen the Terminal outside of RStudio\nNavigate to your project directory using cd\nUse git status to check the status\nUse git add . to stage all changes\nUse git commit -m \"your commit message here\" to commit to your local repo\nUse git pull to check for remote changes\nUse git push to push changes to your remote repo\nGo to your remote repo for the project and check to see that the new updates are stored"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day3-key.html#part-3-fork-clone-a-repo-use-the-code",
+    "href": "course-materials/eod-keys/eod-day3-key.html#part-3-fork-clone-a-repo-use-the-code",
+    "title": "Day 3: Tasks & activities - KEY",
+    "section": "Part 3: Fork & clone a repo, use the code",
+    "text": "Part 3: Fork & clone a repo, use the code\n\nFork and clone this repo (which contains a Quarto document with code to numerically solve the SIR equations) to create a version-controlled project\nOnce you’ve created your project, open the sir.qmd file.\nRun all code in the .qmd (Cmd/Ctrl + Option + R, or go up to the run button and choose the last option “Run All”)\nExplore the code and output graph. What is the code doing? What is the graph telling us?\n\n\n\n\n\n\n\nSolution\n\n\n\nThe code:\n\nUsing the expression for slope (here, sir()) along with an initial condition (values for S, I, R) and parameter estimates (beta = infection parameter, and gamma = recovery parameter), the deSolve::ode() function calculates values of the solution across equal intervals of time (times).\n\nThe graph:\n\nThe number of susceptible individuals (blue) starts at 100% of the population, then decreases as individuals become affected\nThe number of infected individuals (red) initially increases as individuals become infected. This curve peaks when infection rate is the highest, then decreases as infected individuals recover\nThe number of recovered individuals (green) starts at 0 then increases over time as infected individuals recover from the disease\n\n\n\n\nMake small changes to the parameter values to see how the SIR models change. Are the changes expected?\nAfter trying out a few changes, save and knit your new output graph.\nStage, commit, pull, then push to your repo in the command line.\nCheck for your changes on GitHub. Are they there? Cool, done with Part 3.\n\n\n\nEnd Activity Session (Day 3)"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day4-key.html",
+    "href": "course-materials/eod-keys/eod-day4-key.html",
+    "title": "Day 4: Tasks & activities",
+    "section": "",
+    "text": "A population of fish we’re interested in has four life stages: eggs (E), fry (F), juvenile (J), breeding adult (A). You are given the following:\n\nEach breeding adult will produce, on average, 600 eggs\n25% of eggs will survive to become fry\n10% of fry will survive to become juveniles\n40% of juveniles will survive to become adults\nAdult survival rate year to year is 80%\n\n\nWith your group, draw the Leslie matrix model for this population structure.\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[\\begin{bmatrix}\nE_{t+1} \\\\\nF_{t+1} \\\\\nJ_{t+1} \\\\\nA_{t+1}\n\\end{bmatrix} = \\begin{bmatrix}\n0&0&0&600 \\\\\n0.25&0&0&0 \\\\\n0&0.10&0&0 \\\\\n0&0&0.4&0.80\n\\end{bmatrix} \\times \\begin{bmatrix}\nE_t\\\\\nF_t \\\\\nJ_t \\\\\nA_t\n\\end{bmatrix}\\]\n\n\n\nWith your group, given an initial population (Year 0) that has 0 eggs, 40,000 fry, 600 juveniles, and 450 adults, by hand project the population structure (i.e. the count in each life stage) in Year 1.\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[\\begin{bmatrix}\n0&0&0&600 \\\\\n0.25&0&0&0 \\\\\n0&0.10&0&0 \\\\\n0&0&0.4&0.80\n\\end{bmatrix} \\times \\begin{bmatrix}\n0\\\\\n40,000 \\\\\n600 \\\\\n450\n\\end{bmatrix} = \\begin{bmatrix}\n(0)(0) + (0)(40,000) + (0)(600) + (600)(450)\\\\\n(0.25)(0) + (0)(40,000) + (0)(600) + (0)(450) \\\\\n(0)(0) + (0.10)(40,000) + (0)(600) + (0)(450) \\\\\n(0)(0) + (0)(40,000) + (0.40)(600) + (0.80)(450)\n\\end{bmatrix} = \\begin{bmatrix}\n270,000\\\\\n0 \\\\\n4,000 \\\\\n600\n\\end{bmatrix}\\]"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day4-key.html#a-leslie-matrix-example-small-groups",
+    "href": "course-materials/eod-keys/eod-day4-key.html#a-leslie-matrix-example-small-groups",
+    "title": "Day 4: Tasks & activities",
+    "section": "",
+    "text": "A population of fish we’re interested in has four life stages: eggs (E), fry (F), juvenile (J), breeding adult (A). You are given the following:\n\nEach breeding adult will produce, on average, 600 eggs\n25% of eggs will survive to become fry\n10% of fry will survive to become juveniles\n40% of juveniles will survive to become adults\nAdult survival rate year to year is 80%\n\n\nWith your group, draw the Leslie matrix model for this population structure.\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[\\begin{bmatrix}\nE_{t+1} \\\\\nF_{t+1} \\\\\nJ_{t+1} \\\\\nA_{t+1}\n\\end{bmatrix} = \\begin{bmatrix}\n0&0&0&600 \\\\\n0.25&0&0&0 \\\\\n0&0.10&0&0 \\\\\n0&0&0.4&0.80\n\\end{bmatrix} \\times \\begin{bmatrix}\nE_t\\\\\nF_t \\\\\nJ_t \\\\\nA_t\n\\end{bmatrix}\\]\n\n\n\nWith your group, given an initial population (Year 0) that has 0 eggs, 40,000 fry, 600 juveniles, and 450 adults, by hand project the population structure (i.e. the count in each life stage) in Year 1.\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[\\begin{bmatrix}\n0&0&0&600 \\\\\n0.25&0&0&0 \\\\\n0&0.10&0&0 \\\\\n0&0&0.4&0.80\n\\end{bmatrix} \\times \\begin{bmatrix}\n0\\\\\n40,000 \\\\\n600 \\\\\n450\n\\end{bmatrix} = \\begin{bmatrix}\n(0)(0) + (0)(40,000) + (0)(600) + (600)(450)\\\\\n(0.25)(0) + (0)(40,000) + (0)(600) + (0)(450) \\\\\n(0)(0) + (0.10)(40,000) + (0)(600) + (0)(450) \\\\\n(0)(0) + (0)(40,000) + (0.40)(600) + (0.80)(450)\n\\end{bmatrix} = \\begin{bmatrix}\n270,000\\\\\n0 \\\\\n4,000 \\\\\n600\n\\end{bmatrix}\\]"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day4-key.html#fork-clone-a-repo-to-check-your-leslie-matrix-and-make-projections",
+    "href": "course-materials/eod-keys/eod-day4-key.html#fork-clone-a-repo-to-check-your-leslie-matrix-and-make-projections",
+    "title": "Day 4: Tasks & activities",
+    "section": "2. Fork & clone a repo to check your Leslie matrix, and make projections",
+    "text": "2. Fork & clone a repo to check your Leslie matrix, and make projections\n\nFork and clone this repo, which contains the Leslie matrix for the example above.\n\n\nGo to the link above. Press Fork in upper right, then Create Fork.\nOnce in your fork, press the green ‘Code’ button\nCopy the URL to your clipboard\nBack in RStudio, create a new project (with version control)\nWhere prompted, paste the URL & choose where you’ll save your directory\nCreate project\nOpen the .qmd to explore & run Leslie Matrix code\n\n\nExplore the code and outputs. Does the Year 1 population projection align with what you calculated?\nAdd code to the .qmd to expand the projections to years 4, 5, and 6 (it current projects through year 3)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n## ADD YOUR CODE TO PROJECT FOR YEARS 4, 5 & 6 HERE ----\n# Population structure in year 4 ----\nfish_year4 &lt;- fish_leslie %*% fish_year3\nfish_year4\n\n# Population structure in year 4 ----\nfish_year5 &lt;- fish_leslie %*% fish_year4\nfish_year5\n\n# Population structure in year 4 ----\nfish_year6 &lt;- fish_leslie %*% fish_year5\nfish_year6\n\n\n\n\nUsing the command line: Save, stage, commit, then push your changes."
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day4-key.html#data-exploration-summarizing-in-r",
+    "href": "course-materials/eod-keys/eod-day4-key.html#data-exploration-summarizing-in-r",
+    "title": "Day 4: Tasks & activities",
+    "section": "3. Data exploration & summarizing in R",
+    "text": "3. Data exploration & summarizing in R\n\nCreate a new Project\nAdd a new Quarto document in your project, save as r-data-exploration.qmd\nSet up your local and remote git repo by running usethis::use_git() and then usethis::use_github()\nAttach the {tidyverse}, {skimr}, and {GGally} packages in the setup code chunk\nRun View(diamonds) in the Console to look at the built-in diamonds data set in R\nExplore the data set using the functions names(), dim(), summary(), head(), tail(), and skimr::skim()\n\n\n\n\n\n\n\nSolution\n\n\n\n\n# load libraries ----\nlibrary(tidyverse)\nlibrary(skimr)\nlibrary(GGally)\n\n# explore data ----\nView(diamonds)\nnames(diamonds)\ndim(diamonds)\nsummary(diamonds)\nhead(diamonds)\ntail(diamonds)\nskim(diamonds)\n\n\n\n\nCreate a pairs plot using ggpairs()\n\n\n\n\n\n\n\nSolution\n\n\n\nNote: only code presented here because this plot takes a little while to render.\n\nGGally::ggpairs(diamonds)\n\n\n\n\nCreate a basic ggplot scatterplot of diamond price (price) as a function of size (carat)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreate a histogram showing the distribution of values in the carat column (recall: a histogram only requires a single variable, e.g. aes(x = carat))\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSave, stage, commit, pull, then push your changes back to your repo in RStudio using the GUI interface (buttons)\nCreate a boxplot (see: geom_boxplot) of diamond clarity (on the x-axis) and price (y-axis).\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn the command line, stage, commit, & push changes\n\n\n\nEnd Activity Session (Day 4)"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day1-key.html",
+    "href": "course-materials/eod-keys/eod-day1-key.html",
+    "title": "Day 1: Tasks & activities - KEY",
+    "section": "",
+    "text": "By hand: Evaluate \\(f(x,y)=x^2-1+3xy\\) at \\(x=1\\) and \\(y = 0\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(f(1,0)=1^2-1+(3)(1)(0) = 1 - 1 + 0 = 0\\)\n\n\n\nIn the R Console: given \\(G(t,z)=3.1(t-4.2)^2 + 0.06z\\), find the value of \\(G(1, 2.5)\\) (you do NOT need to write a function - just do the calculation in R using R as a calculator)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n3.1 * (1 - 4.2)^2 + (0.06 * 2.5)\n\n[1] 31.894\n\n\n\n\n\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use R & Google here for calculations.\n\n\n\n\n\n\nSolution\n\n\n\nAccording to Wikipedia, one barrel of oil is equal to 42 gallons and ~159 liters.\n\nCompany A: \\(14.6\\; barrels\\; spilled - 9.3\\; barrels\\; recovered = 5.3\\; barrels\\; unrecovered\\)\nCompany B: \\(692\\; liters \\times \\frac{1\\; barrel}{159\\; liters} = 4.352201\\; barrels\\;spilled\\; \\times 0.06 = 0.2611321\\;barrels\\;unrecovered\\)\nCompnay C: \\(18.1\\;gallons\\; \\times \\frac{1\\;barrel}{42\\;gallons} = 0.4309524\\;barrels\\;spilled\\; \\times 1 = 0.4309524\\;barrels\\;unrecovered\\)\n\nTotal unrecovered barrels = 5.3 + 0.2611321 + 0.4309524 = 5.992084 ~ 6 barrels\n\n\n\n\n\n\nBy hand: If an urchin population in a study plot in 1990 is 432, and in 2004 is 801, what is the average rate of population increase? Find the slope, then write a statement about the average increase (including units).\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[slope\\; (m) = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{801-432}{2004-1990} = 26.43\\] Between 1990 and 2004, urchin populations increased by an average of 26.43 urchins per year."
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day1-key.html#section-1.-practice-problems",
+    "href": "course-materials/eod-keys/eod-day1-key.html#section-1.-practice-problems",
+    "title": "Day 1: Tasks & activities - KEY",
+    "section": "",
+    "text": "By hand: Evaluate \\(f(x,y)=x^2-1+3xy\\) at \\(x=1\\) and \\(y = 0\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\\(f(1,0)=1^2-1+(3)(1)(0) = 1 - 1 + 0 = 0\\)\n\n\n\nIn the R Console: given \\(G(t,z)=3.1(t-4.2)^2 + 0.06z\\), find the value of \\(G(1, 2.5)\\) (you do NOT need to write a function - just do the calculation in R using R as a calculator)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n3.1 * (1 - 4.2)^2 + (0.06 * 2.5)\n\n[1] 31.894\n\n\n\n\n\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use R & Google here for calculations.\n\n\n\n\n\n\nSolution\n\n\n\nAccording to Wikipedia, one barrel of oil is equal to 42 gallons and ~159 liters.\n\nCompany A: \\(14.6\\; barrels\\; spilled - 9.3\\; barrels\\; recovered = 5.3\\; barrels\\; unrecovered\\)\nCompany B: \\(692\\; liters \\times \\frac{1\\; barrel}{159\\; liters} = 4.352201\\; barrels\\;spilled\\; \\times 0.06 = 0.2611321\\;barrels\\;unrecovered\\)\nCompnay C: \\(18.1\\;gallons\\; \\times \\frac{1\\;barrel}{42\\;gallons} = 0.4309524\\;barrels\\;spilled\\; \\times 1 = 0.4309524\\;barrels\\;unrecovered\\)\n\nTotal unrecovered barrels = 5.3 + 0.2611321 + 0.4309524 = 5.992084 ~ 6 barrels\n\n\n\n\n\n\nBy hand: If an urchin population in a study plot in 1990 is 432, and in 2004 is 801, what is the average rate of population increase? Find the slope, then write a statement about the average increase (including units).\n\n\n\n\n\n\n\nSolution\n\n\n\n\\[slope\\; (m) = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{801-432}{2004-1990} = 26.43\\] Between 1990 and 2004, urchin populations increased by an average of 26.43 urchins per year."
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day1-key.html#section-2-projects-and-functions",
+    "href": "course-materials/eod-keys/eod-day1-key.html#section-2-projects-and-functions",
+    "title": "Day 1: Tasks & activities - KEY",
+    "section": "Section 2: Projects and functions",
+    "text": "Section 2: Projects and functions\n\nCreate a new R project (named eds212-day1-tasks)\nAdd a new Quarto document to the project\nPress Render (save this in your project as fish-length-weight.qmd)\nDelete everything below the first code chunk\nAttach the tidyverse package\n\n\n\n\n\n\n\nSolution\n\n\n\n\nlibrary(tidyverse)\n\n\n\n\nPlay around with markdown in the Quarto doc. Try adding text with at least the following:\n\n\nHeaders of varying size\nItalics\nBold\nSuperscripts / subscripts\nBulletpoints\nAn image (google how!)\n\n\nAdd a new code chunk\nWithin the R code chunk, write a function to estimate fish standard weight, given parameters \\(a\\), \\(b\\), and fish length \\(L\\) as inputs. “Standard weight” is how much we expect a fish to weigh, give the species and fish length, and the nonlinear relationship is given by:\n\n\\[W=aL^b\\]\nwhere L is total fish length (centimeters), W is the expected fish weight (grams), and a and b are species-dependent parameter values.\n\nTest out your function to find the mass (g) for a 60 cm fish of the following species (parameter estimates from Peyton et al. (2016)):\n\n\nMilkfish: a = 0.0905, b = 2.52\nGiant trevally: a = 0.0353, b = 3.05\nGreat barracuda: a = 0.0181, b = 3.27\n\n\n\n\n\n\n\nSolution\n\n\n\n\n# write function ----\nfish_weight_g &lt;- function(length_cm, a, b){\n  weight_g = a * length_cm^b\n}\n\n# test function ----\nmilkfish_weight &lt;- fish_weight_g(length_cm = 60, a = 0.0905, b = 2.52)\nmilkfish_weight\n\n[1] 2738.985\n\ntrevally_weight &lt;- fish_weight_g(length_cm = 60, a = 0.0353, b = 3.05)\ntrevally_weight\n\n[1] 9356.987\n\nbarracuda_weight &lt;- fish_weight_g(length_cm = 60, a = 0.0181, b = 3.27)\nbarracuda_weight\n\n[1] 11809.54\n\n\n\n\n\n\n\n\n\n\nCitation\n\n\n\nPeyton, K. A., T. S. Sakihara, L. K. Nishiura, T. T. Shindo, T. E. Shimoda, S. Hau, A. Akiona, and K. Lorance. 2016. “Length–Weight Relationships for Common Juvenile Fishes and Prey Species in Hawaiian Estuaries.” Journal of Applied Ichthyology 32 (3): 499–502. https://doi.org/10.1111/jai.12957.\n\n\n\nMake and store (as fish_length) a sequence of size ranges from 0 to 200 cm, by increments of 1 cm\n\n\n\n\n\n\n\nSolution\n\n\n\n\nfish_length &lt;- seq(from = 0, to = 200, by = 1)\n\n\n\n\nEstimate the weight for giant barracudas along that entire range (given the parameters above). Store the output as barracuda_weight.\n\n\n\n\n\n\n\nSolution\n\n\n\n\nbarracuda_weight &lt;- fish_weight_g(length_cm = fish_length, a = 0.0181, b = 3.27)\n\n\n\n\nBind the lengths and estimated barracuda weights into a single data frame using data.frame()\n\n\n\n\n\n\n\nSolution\n\n\n\n\nbarracuda_df &lt;- data.frame(fish_length, barracuda_weight)\n# View(barracuda_df)\n\n\n\n\nCreate a ggplot graph of predicted length versus weight for giant barracuda\n\n\n\n\n\n\n\nSolution\n\n\n\n\nggplot(data = barracuda_df, aes(x = fish_length, y = barracuda_weight)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\nUpdate the graph axis labels and title\n\n\n\n\n\n\n\nSolution\n\n\n\n\nggplot(data = barracuda_df, aes(x = fish_length, y = barracuda_weight)) +\n  geom_point() +\n  labs(title = \"Predicted barracuda weights, estimated from fish lengths\",\n       x = \"Length (cm)\",\n       y = \"Standard weight (g)\")\n\n\n\n\n\n\n\n\n\n\n\nRender the .qmd. Make sure everything is saved.\nClose your project. Reopen the project, and ensure that you can re-run the entire Quarto document (reproducibility check).\n\n\n\nEnd Activity Session (Day 1)"
+  },
+  {
+    "objectID": "course-materials/eod-keys/eod-day2-key.html#solution-1",
+    "href": "course-materials/eod-keys/eod-day2-key.html#solution-1",
+    "title": "Day 2: Tasks & activities - KEY",
+    "section": "Solution",
+    "text": "Solution\nFirst derivative:\n\n\\(G'(t) = 3.1 -(4)(5.6)t^3 +(-3)(4.3)t^{-4}\\)\n\\(G'(t) = 3.1 -22.4t^3 -12.9t^{-4}\\)\n\nSecond derivative:\n\n\\(G''(t) = 3.1. - (22.4)(3)t^2 -(12.9)(-4)t^{-5}\\)\n\\(G''(t) = 3.1. - 67.2t^2 -(12.9)(-4)t^{-5}\\)\n\\(G''(t) = -67.2t^2 + 51.6t^{-5}\\)\n\nThird derivative:\n\n\\(G'''(t) = -(67.2)(2)t + (51.6)(-5)t^{-6}\\)\n\\(G'''(t) = -134.4t - 258t^{-6}\\)\n\n:::"
   }
 ]
