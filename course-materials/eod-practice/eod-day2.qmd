@@ -14,7 +14,12 @@ d. Once you have the definition of the derivative, say out loud (each person) wh
 
 <!-- 1. By hand and using derivative rules: Find $\frac{dx}{dt}$ for $x(t)=\frac{1}{x^3}+2.4e^{3x}$ -->
 
-## Section 2: Derivatives in R
+## Section 2: Derivatives by hand
+
+a. By hand and using derivative rules, find the third derivative of 
+$$G(t)=2.2 + 3.1t-5.6t^4 + \frac{4.3}{t^3}$$
+
+## Section 3: Derivatives in R
 
 ### Create a new version-controlled R Project
 
@@ -32,7 +37,7 @@ f. In your Quarto document, find the derivative expression and slope at the indi
 
 g. Render, then stage, commit, pull, then push your changes to your repo on GitHub. Check your repo (refresh) to make sure the changes show up there.
 
-## Section 3: Make another penguin plot
+## Section 4: Make another penguin plot
 
 a. In a new code chunk, create a `ggplot` graph of penguin bill length versus bill depth (using the `penguins` dataset in the `{palmerpenguins}` package), with point color dependent on species. You should attach the `{tidyverse}` and `{palmerpenguins}` package in your `.qmd` setup chunk if you haven't already. Update labels and add a title.
 b. In a new code chunk, make a jitter plot of flipper length by species (species on the x-axis, flipper length on the y-axis). Update axis labels and add a title. See `?geom_jitter`. 
@@ -44,4 +49,3 @@ f. Repeat one more time - make a change to your plot, render, stage, commit & pu
 ::: {.center-text .body-text-xl .teal-text}
 End Activity Session (Day 2)
 :::
-
