@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -64,6 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +82,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,78 +97,106 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 212</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">home</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://docs.google.com/document/d/1L3nnsIcDQy_PKegzaaZxzUE7BTKLzO6wx1uRoF22BM4/edit?usp=sharing" rel="" target="_blank">
- <span class="menu-text">syllabus</span></a>
+    <a class="nav-link" href="https://docs.google.com/document/d/1L3nnsIcDQy_PKegzaaZxzUE7BTKLzO6wx1uRoF22BM4/edit?usp=sharing" target="_blank"> 
+<span class="menu-text">syllabus</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-daily-materials" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-daily-materials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">daily materials</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-daily-materials">    
         <li>
-    <a class="dropdown-item" href="../../course-materials/day1.html" rel="" target="">
- <span class="dropdown-text">day 1 (8/5)</span></a>
+    <a class="dropdown-item" href="../../course-materials/day1.html">
+ <span class="dropdown-text">day 1 (8/4)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../course-materials/day2.html" rel="" target="">
- <span class="dropdown-text">day 2 (8/6)</span></a>
+    <a class="dropdown-item" href="../../course-materials/day2.html">
+ <span class="dropdown-text">day 2 (8/5)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../course-materials/day3.html" rel="" target="">
- <span class="dropdown-text">day 3 (8/7)</span></a>
+    <a class="dropdown-item" href="../../course-materials/day3.html">
+ <span class="dropdown-text">day 3 (8/6)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../course-materials/day4.html" rel="" target="">
- <span class="dropdown-text">day 4 (8/8)</span></a>
+    <a class="dropdown-item" href="../../course-materials/day4.html">
+ <span class="dropdown-text">day 4 (8/7)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../course-materials/day5.html" rel="" target="">
- <span class="dropdown-text">day 5 (8/9)</span></a>
+    <a class="dropdown-item" href="../../course-materials/day5.html">
+ <span class="dropdown-text">day 5 (8/8)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/samanthacsik/EDS-212-essential-math" rel="" target="_blank"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/EDS-212-Essential-Math" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -175,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -191,13 +226,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#meet-r-all-on-its-own" id="toc-meet-r-all-on-its-own" class="nav-link active" data-scroll-target="#meet-r-all-on-its-own">1. Meet R all on its own</a></li>
-  <li><a href="#meet-rstudio" id="toc-meet-rstudio" class="nav-link" data-scroll-target="#meet-rstudio">2. Meet RStudio</a></li>
-  <li><a href="#basic-calculations-in-the-console" id="toc-basic-calculations-in-the-console" class="nav-link" data-scroll-target="#basic-calculations-in-the-console">3. Basic calculations in the Console</a></li>
-  <li><a href="#write-an-r-script" id="toc-write-an-r-script" class="nav-link" data-scroll-target="#write-an-r-script">4. Write an R <em>script</em></a></li>
-  <li><a href="#introduction-to-quarto" id="toc-introduction-to-quarto" class="nav-link" data-scroll-target="#introduction-to-quarto">5. Introduction to Quarto</a></li>
-  <li><a href="#our-first-function" id="toc-our-first-function" class="nav-link" data-scroll-target="#our-first-function">6. Our first function</a></li>
-  <li><a href="#close-reopen---no-precious-outputs-or-objects" id="toc-close-reopen---no-precious-outputs-or-objects" class="nav-link" data-scroll-target="#close-reopen---no-precious-outputs-or-objects">7. Close &amp; reopen - no precious outputs or objects</a></li>
+  <li><a href="#set-up-file-organization" id="toc-set-up-file-organization" class="nav-link active" data-scroll-target="#set-up-file-organization">1. Set up file organization</a></li>
+  <li><a href="#meet-r-all-on-its-own" id="toc-meet-r-all-on-its-own" class="nav-link" data-scroll-target="#meet-r-all-on-its-own">2. Meet R all on its own</a></li>
+  <li><a href="#meet-rstudio" id="toc-meet-rstudio" class="nav-link" data-scroll-target="#meet-rstudio">3. Meet RStudio</a></li>
+  <li><a href="#basic-calculations-in-the-console" id="toc-basic-calculations-in-the-console" class="nav-link" data-scroll-target="#basic-calculations-in-the-console">4. Basic calculations in the Console</a></li>
+  <li><a href="#write-an-r-script" id="toc-write-an-r-script" class="nav-link" data-scroll-target="#write-an-r-script">5. Write an R <em>script</em></a></li>
+  <li><a href="#introduction-to-quarto" id="toc-introduction-to-quarto" class="nav-link" data-scroll-target="#introduction-to-quarto">6. Introduction to Quarto</a></li>
+  <li><a href="#our-first-function" id="toc-our-first-function" class="nav-link" data-scroll-target="#our-first-function">7. Our first function</a></li>
+  <li><a href="#close-reopen---no-precious-outputs-or-objects" id="toc-close-reopen---no-precious-outputs-or-objects" class="nav-link" data-scroll-target="#close-reopen---no-precious-outputs-or-objects">8. Close &amp; reopen - no precious outputs or objects</a></li>
   </ul>
 </nav>
     </div>
@@ -207,11 +243,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+
 <!-- :::{.gray-text .center-text} -->
 <!-- *Artwork by [Allison Horst](https://allisonhorst.com/)* -->
 <!-- ::: -->
+<section id="set-up-file-organization" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-file-organization">1. Set up file organization</h2>
+<p>A <strong>file path</strong> is a string of characters that points to a unique location in your computer where a file or folder either currently exists or will exist. Different sections of the path are separated by a path separator. A path separator can be a forward slash (<code>/</code>) in Mac OS or backward slash (<code>\</code>) in Windows/Linux.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Find and copy an item’s filepath
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>In Mac OS, you can hold the <kbd>Option</kbd> and <kbd>Shift</kbd> keys and click on the item. In the pop-up window, you can then select “Copy [item name] as Pathname”.</p></li>
+<li><p>In Windows and Linux, you can hold the <kbd>Shift</kbd> key and double click on the item. In the pop-up window, you can then select the “Copy as path”.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p>For ease of troubleshooting, set up your file organization like so:</p>
+<ul>
+<li>Under your <strong>Documents</strong> folder, create a folder and name it <strong>MEDS</strong></li>
+<li>You can create a folder for each class (e.g., <strong>EDS-212</strong>, <strong>EDS-221</strong>, etc.) under <strong>MEDS</strong></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/folder-structure.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" alt="TBD"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="meet-r-all-on-its-own" class="level2">
-<h2 class="anchored" data-anchor-id="meet-r-all-on-its-own">1. Meet R all on its own</h2>
+<h2 class="anchored" data-anchor-id="meet-r-all-on-its-own">2. Meet R all on its own</h2>
 <div class="body-text-l teal-text">
 <p>…because you should do it just one time.</p>
 </div>
@@ -222,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/R.png" class="img-fluid figure-img" style="width:70.0%" alt="TBD"></p>
+<p><img src="images/R.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" alt="TBD"></p>
 </figure>
 </div>
 </div>
@@ -235,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="meet-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="meet-rstudio">2. Meet RStudio</h2>
+<h2 class="anchored" data-anchor-id="meet-rstudio">3. Meet RStudio</h2>
 <p>RStudio provides a nice user interface for data science, development, reporting, and collaboration (all of which you’ll learn about throughout the MEDS program) in one place. Note that while it’s called <strong>R</strong>Studio, it is a useful IDE for development in a number of languages and file types (check out some by clicking on <strong>File</strong> &gt; <strong>New File</strong>, and seeing the multitude of options that RStudio suggests).</p>
 <p>Let’s take a quick tour of the RStudio IDE, then customize it for fun and functionality:</p>
 <ol type="a">
@@ -248,7 +322,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/RStudio.png" class="img-fluid figure-img" style="width:70.0%" alt="TBD"></p>
+<p><img src="images/RStudio.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" alt="TBD"></p>
 </figure>
 </div>
 </div>
@@ -265,7 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>You can check out the <a href="https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html">RStudio User Guide</a> for additional information and helpful tips!</p>
 </section>
 <section id="basic-calculations-in-the-console" class="level2">
-<h2 class="anchored" data-anchor-id="basic-calculations-in-the-console">3. Basic calculations in the Console</h2>
+<h2 class="anchored" data-anchor-id="basic-calculations-in-the-console">4. Basic calculations in the Console</h2>
 <p>Next, let’s familiarize ourselves with some basic operations in the <em>Console</em>:</p>
 <ol type="a">
 <li><span class="teal-text"><strong>Pressing <em>Enter</em> / <em>Return</em> will immediately execute a line of code typed into the Console.</strong></span> Try using some of the common operators (<code>*</code>, <code>/</code>, <code>+</code>, <code>-</code>, <code>^</code>), as well as functions to perform calculations in the Console:</li>
@@ -326,11 +400,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 </section>
 <section id="write-an-r-script" class="level2">
-<h2 class="anchored" data-anchor-id="write-an-r-script">4. Write an R <em>script</em></h2>
+<h2 class="anchored" data-anchor-id="write-an-r-script">5. Write an R <em>script</em></h2>
 <p>If we want to <strong>save</strong> our code so that we can access / re-run it later (which, in most cases, you do!), we can instead write our code in an R script (rather than directly in the console):</p>
 <ol type="a">
 <li><p><span class="teal-text"><strong>Create a new R script</strong></span> by clicking on the new file button (top left corner of RStudio), then choosing <strong>R Script</strong>.</p></li>
-<li><p><span class="teal-text"><strong>Create some variables</strong></span> to your script, then <strong>save</strong> it (to your Desktop is fine for now). Run your code and see your variables appear in your <strong>Environment</strong>:</p></li>
+<li><p><span class="teal-text"><strong>Create some variables</strong></span> to your script, then <strong>save</strong> it (to your <strong>EDS-212</strong> folder). Run your code and see your variables appear in your <strong>Environment</strong>:</p></li>
 </ol>
 <div class="cell">
 <div class="code-with-filename">
@@ -361,10 +435,10 @@ Add annotations (aka code comments) to your scripts using <code>#</code>
 </ol>
 </section>
 <section id="introduction-to-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-quarto">5. Introduction to Quarto</h2>
+<h2 class="anchored" data-anchor-id="introduction-to-quarto">6. Introduction to Quarto</h2>
 <p><a href="https://quarto.org/">Quarto</a> is a publishing framework that lets you make all kinds of things (dashboards, websites, notebooks, slides, books, etc.) that combine markdown (plain text with added formatting), code, and outputs in one place - which makes it an incredible tool for reproducibility. Let’s make a Quarto document (<strong>New File</strong> (top left corner) &gt; <strong>Quarto Document…</strong> &gt; provide it with a title (e.g.&nbsp;<code>My first Quarto doc!</code>) and learn by doing.</p>
 <ol type="a">
-<li><p><span class="teal-text"><strong>Render your Quarto doc</strong></span> – when you first create a new Quarto doc, it’ll have some pre-populated content. Click the <strong>Render</strong> button at the top of your file (it’ll prompt you to save your file first – you can save this to your Desktop for now). This converts all the content first to plain markdown, then to the file output type that you select (the default, and the one we’ll use most often, is HTML)</p></li>
+<li><p><span class="teal-text"><strong>Render your Quarto doc</strong></span> – when you first create a new Quarto doc, it’ll have some pre-populated content. Click the <strong>Render</strong> button at the top of your file (it’ll prompt you to save your file first – you can save this to your <strong>EDS-212</strong> folder). This converts all the content first to plain markdown, then to the file output type that you select (the default, and the one we’ll use most often, is HTML)</p></li>
 <li><p><span class="teal-text"><strong>Delete all the pre-populated content</strong></span> starting on line 6 (beneath the <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> gates, <code>---</code>; more on YAML later)</p></li>
 <li><p><span class="teal-text"><strong>Let’s add some of our own formatted content</strong></span> to the body of our Quarto doc, including:</p>
 <ul>
@@ -417,7 +491,7 @@ Add annotations (aka code comments) to your scripts using <code>#</code>
 <!-- # ``` -->
 </section>
 <section id="our-first-function" class="level2">
-<h2 class="anchored" data-anchor-id="our-first-function">6. Our first function</h2>
+<h2 class="anchored" data-anchor-id="our-first-function">7. Our first function</h2>
 <p>We’ll get into the weeds of functions in EDS 221. For now, we’ll create functions to quickly do repeated calculations, and to familiarize ourselves with function notation.</p>
 <p>General function notation looks like this:</p>
 <div class="cell">
@@ -450,7 +524,7 @@ Add annotations (aka code comments) to your scripts using <code>#</code>
 <li><span class="teal-text"><strong>Try it out!</strong></span> Convert <span class="math inline">\(50\frac{g}{cm^3}\)</span> to <span class="math inline">\(\frac{kg}{ft^3}\)</span> using the function you’ve created.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -459,7 +533,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="code-with-filename">
@@ -477,7 +551,7 @@ Solution
 </div>
 </section>
 <section id="close-reopen---no-precious-outputs-or-objects" class="level2">
-<h2 class="anchored" data-anchor-id="close-reopen---no-precious-outputs-or-objects">7. Close &amp; reopen - no precious outputs or objects</h2>
+<h2 class="anchored" data-anchor-id="close-reopen---no-precious-outputs-or-objects">8. Close &amp; reopen - no precious outputs or objects</h2>
 <p>If you are writing code reproducibly, you should be able to close the file you’re working in without stress. That’s because all of your stored objects - functions, variables, etc. - should be recreated by opening and re-running the code in your file. If you <em>cannot</em> do that, then your code is not reproducible.</p>
 <p>That means that <strong>your scripted code is what is precious</strong> - and we want to build bomb-proof strategies for making sure it’s safe.</p>
 <p>Which brings us to a critical lesson: Create things like you expect your computer to explode at any minute. Your computer is NOT a safe place. Where is? Someone away from your local computer…somewhere cloudlike and wonderful. Somewhere like <em>GitHub</em> (coming up soon!).</p>
@@ -525,18 +599,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -568,11 +631,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -582,8 +684,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -595,7 +706,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -639,6 +873,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -664,6 +899,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -726,13 +987,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><img src="images/bren-logo.png" alt="The Bren School of Environmental Science &amp; Management logo" width="250"></div>   
+    <div class="nav-footer-left">
+<p><img src="images/bren-logo.png" alt="The Bren School of Environmental Science &amp; Management logo" width="250"></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This website is built with <a href="https://github.com/samanthacsik/EDS-212-essential-math"><i class="fa-brands fa-github" title="the github octocat logo" aria-label="github"></i></a>, <a href="https://www.r-project.org/about.html"><i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i></a> and <a href="https://quarto.org/">Quarto</a></div>
+    <div class="nav-footer-right">
+<p>This website is built with <a href="https://github.com/samanthacsik/EDS-212-essential-math"><i class="fa-brands fa-github" title="the github octocat logo" aria-label="github"></i></a>, <a href="https://www.r-project.org/about.html"><i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i></a> and <a href="https://quarto.org/">Quarto</a></p>
+</div>
   </div>
 </footer>
+
 
 
 

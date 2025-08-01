@@ -16,7 +16,7 @@ knitr::include_graphics("images/horst-brainstorm-montage.png")
 ```
 
 ::: {.gray-text .center-text}
-*Artwork by [Allison Horst](https://allisonhorst.com/){:target="_blank"}*
+*Artwork by [Allison Horst](https://allisonhorst.com/){target="_blank"}*
 :::
 
 ## Course Description

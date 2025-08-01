@@ -17,7 +17,34 @@ editor_options:
 <!-- *Artwork by [Allison Horst](https://allisonhorst.com/)* -->
 <!-- ::: -->
 
-## 1. Meet R all on its own
+## 1. Set up file organization
+
+A **file path** is a string of characters that points to a unique location in your computer where a file or folder either currently exists or will exist. Different sections of the path are separated by a path separator. A path separator can be a forward slash (`/`) in Mac OS or backward slash (`\`) in Windows/Linux.
+
+::: {.callout-tip collapse=true}
+## Find and copy an item's filepath 
+
+- In Mac OS, you can hold the <kbd>Option</kbd> and <kbd>Shift</kbd> keys and click on the item. In the pop-up window, you can then select "Copy [item name] as Pathname".
+
+- In Windows and Linux, you can hold the <kbd>Shift</kbd> key and double click on the item. In the pop-up window, you can then select the “Copy as path”.
+
+:::
+
+For ease of troubleshooting, set up your file organization like so:
+
+- Under your **Documents** folder, create a folder and name it **MEDS**
+- You can create a folder for each class (e.g., **EDS-212**, **EDS-221**, etc.) under **MEDS**
+
+```{r}
+#| eval: true 
+#| echo: false
+#| fig-align: "center"
+#| out-width: "70%" 
+#| fig-alt: "TBD"
+knitr::include_graphics("images/folder-structure.png")
+```
+
+## 2. Meet R all on its own
 
 ::: {.body-text-l .teal-text}
 ...because you should do it just one time.
@@ -40,7 +67,7 @@ knitr::include_graphics("images/R.png")
 Always remember: [**R is the programming language. RStudio is the IDE.**]{.teal-text}
 :::
 
-## 2. Meet RStudio
+## 3. Meet RStudio
 
 RStudio provides a nice user interface for data science, development, reporting, and collaboration (all of which you'll learn about throughout the MEDS program) in one place. Note that while it's called **R**Studio, it is a useful IDE for development in a number of languages and file types (check out some by clicking on **File** > **New File**, and seeing the multitude of options that RStudio suggests). 
 
@@ -66,7 +93,7 @@ c. [**Update some important settings,**]{.teal-text} including:
     
 You can check out the [RStudio User Guide](https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html) for additional information and helpful tips! 
         
-## 3. Basic calculations in the Console
+## 4. Basic calculations in the Console
 
 Next, let's familiarize ourselves with some basic operations in the *Console*:
 
@@ -115,13 +142,13 @@ temp_c <- 17.4
 
 d. [**Now let's Restart our R session**]{.teal-text} by clicking **Session** > **Restart R**. Are your objects still in your **Environment**? NOPE!
 
-## 4. Write an R *script*
+## 5. Write an R *script*
 
 If we want to **save** our code so that we can access / re-run it later (which, in most cases, you do!), we can instead write our code in an R script (rather than directly in the console):
 
 a. [**Create a new R script**]{.teal-text} by clicking on the new file button (top left corner of RStudio), then choosing **R Script**.
 
-b. [**Create some variables**]{.teal-text} to your script, then **save** it (to your Desktop is fine for now). Run your code and see your variables appear in your **Environment**:
+b. [**Create some variables**]{.teal-text} to your script, then **save** it (to your **EDS-212** folder). Run your code and see your variables appear in your **Environment**:
 
 ```{r filename=".R"}
 #| eval: false
@@ -140,11 +167,11 @@ We'll talk a lot about the importance of annotating your code (i.e. leaving note
 
 c. [**Restart R, then reopen your script**]{.teal-text} -- your Environment will be cleared after restarting your R session, but now we can easily re-run our script, which preserves our variables.
 
-## 5. Introduction to Quarto
+## 6. Introduction to Quarto
 
 [Quarto](https://quarto.org/) is a publishing framework that lets you make all kinds of things (dashboards, websites, notebooks, slides, books, etc.) that combine markdown (plain text with added formatting), code, and outputs in one place - which makes it an incredible tool for reproducibility. Let's make a Quarto document (**New File** (top left corner) > **Quarto Document...** > provide it with a title (e.g. `My first Quarto doc!`) and learn by doing. 
 
-a. [**Render your Quarto doc**]{.teal-text} -- when you first create a new Quarto doc, it'll have some pre-populated content. Click the **Render** button at the top of your file (it'll prompt you to save your file first -- you can save this to your Desktop for now). This converts all the content first to plain markdown, then to the file output type that you select (the default, and the one we'll use most often, is HTML) 
+a. [**Render your Quarto doc**]{.teal-text} -- when you first create a new Quarto doc, it'll have some pre-populated content. Click the **Render** button at the top of your file (it'll prompt you to save your file first -- you can save this to your **EDS-212** folder). This converts all the content first to plain markdown, then to the file output type that you select (the default, and the one we'll use most often, is HTML) 
 
 b. [**Delete all the pre-populated content**]{.teal-text} starting on line 6 (beneath the [YAML](https://en.wikipedia.org/wiki/YAML) gates, `---`; more on YAML later)
 
@@ -197,7 +224,7 @@ c. [**Let's add some of our own formatted content**]{.teal-text} to the body of 
 <!-- # ``` -->
 
     
-## 6. Our first function
+## 7. Our first function
 
 We'll get into the weeds of functions in EDS 221. For now, we'll create functions to quickly do repeated calculations, and to familiarize ourselves with function notation.  
 
@@ -241,7 +268,7 @@ convert_units(50)
 ```
 :::
 
-## 7. Close & reopen - no precious outputs or objects
+## 8. Close & reopen - no precious outputs or objects
 
 If you are writing code reproducibly, you should be able to close the file you're working in without stress. That's because all of your stored objects - functions, variables, etc. - should be recreated by opening and re-running the code in your file. If you *cannot* do that, then your code is not reproducible. 
 
