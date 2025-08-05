@@ -1187,7 +1187,7 @@
     "href": "course-materials/slides/day1.1-slides.html#math-evolution",
     "title": "",
     "section": "",
-    "text": "Maybe you’re thinking…\n\n\n\n\n\n\n\n\n\n\n\nSource: Michael Sandberg’s Data Visualization Blog"
+    "text": "Maybe you’re thinking…\n\n\n\nSource: Michael Sandberg’s Data Visualization Blog"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#why-math",
@@ -1243,7 +1243,7 @@
     "href": "course-materials/slides/day1.1-slides.html#notation-matters",
     "title": "",
     "section": "",
-    "text": "1. Notation matters\n\n\n\nSimplify the following: \\(6 \\div 3(4+2)\\)\nWhat would be a harder-to-misinterpret way to write this?\n\n\n\n\n\n\n\n\n\n\n\n\nANSWER: 12\nA harder to misinterpret way to write this: \\((6 \\div 3) \\times (4+2)\\)\n\n–"
+    "text": "1. Notation matters\n\n\n\nSimplify the following: \\(6 \\div 3(4+2)\\)\nWhat would be a harder-to-misinterpret way to write this?\n\n\n\n\nANSWER: 12\nA harder to misinterpret way to write this: \\((6 \\div 3) \\times (4+2)\\)\n\n–"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#takeaway",
@@ -1299,7 +1299,7 @@
     "href": "course-materials/slides/day1.1-slides.html#exponents-rules",
     "title": "",
     "section": "",
-    "text": "Exponent rules\n\n\n\\(x^ax^b=x^{a+b}\\) ; Example: \\(x^5x^3=x^{5+3}=x^8\\) ; Example: \\(2^2 \\times 2^2\\) = \\((2 \\times 2) \\times (2 \\times 2)\\) = \\(2^4\\)\n\n. . .\n\n\\(\\frac{x^a}{x^b}=x^{a-b}\\) ; Example: \\(\\frac{z^5}{z^3}=z^{5-3}=z^2\\) ; Example: \\(\\frac{2^3}{2^2}\\) = \\(\\frac{2 \\times 2 \\times 2}{2 \\times 2}\\) = \\(2^1\\)\n\n. . .\n\n\\(\\frac{1}{x^a}=x^{-a}\\) ; Example: \\(b^{-4x}=\\frac{1}{b^{4x}}\\)\n\n. . .\n\n\\((x^a)^b=x^{ab}\\) ; Example: \\((2^3)^2=2^{3*2}=2^6=64\\)\n\n. . .\n\n\\((\\frac{x}{y})^a=\\frac{x^a}{y^a}\\) ; Example: \\((\\frac{y}{2^2})^2=\\frac{y^2}{(2^2)^2}=\\frac{y^2}{2^4}=\\frac{y^2}{16}\\)\n\n. . .\n\n\\((xy)^a=x^ay^a\\) ; Example: \\((3x)^2=3^2x^2\\)"
+    "text": "Exponent rules\n\n\n\\(x^ax^b=x^{a+b}\\) ; Example: \\(x^5x^3=x^{5+3}=x^8\\) ; Example: \\(2^2 \\times 2^2\\) = \\((2 \\times 2) \\times (2 \\times 2)\\) = \\(2^4\\)\n\n\n\n\\(\\frac{x^a}{x^b}=x^{a-b}\\) ; Example: \\(\\frac{z^5}{z^3}=z^{5-3}=z^2\\) ; Example: \\(\\frac{2^3}{2^2}\\) = \\(\\frac{2 \\times 2 \\times 2}{2 \\times 2}\\) = \\(2^1\\)\n\n\n\n\n\\(\\frac{1}{x^a}=x^{-a}\\) ; Example: \\(b^{-4x}=\\frac{1}{b^{4x}}\\)\n\n\n\n\n\\((x^a)^b=x^{ab}\\) ; Example: \\((2^3)^2=2^{3*2}=2^6=64\\)\n\n\n\n\n\\((\\frac{x}{y})^a=\\frac{x^a}{y^a}\\) ; Example: \\((\\frac{y}{2^2})^2=\\frac{y^2}{(2^2)^2}=\\frac{y^2}{2^4}=\\frac{y^2}{16}\\)\n\n\n\n\n\\((xy)^a=x^ay^a\\) ; Example: \\((3x)^2=3^2x^2\\)"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#exponents-practice",
@@ -1313,7 +1313,7 @@
     "href": "course-materials/slides/day1.1-slides.html#FOIL",
     "title": "",
     "section": "",
-    "text": "Multiplying expressions (FOIL)\n\n\nFirst, Outside, Inside, Last\n\nExample:\n\\[(2x+5)(x-3)\\]\n. . .\n\n\\[= (2x \\times x) (2x \\times -3) (5 \\times x) (5 \\times -3)\\]\n\\[= 2x^2 - 6x + 5x - 15\\]\n\\[=2x^2-x-15\\]"
+    "text": "Multiplying expressions (FOIL)\n\n\nFirst, Outside, Inside, Last\n\nExample:\n\\[(2x+5)(x-3)\\]\n\n\n\\[= (2x \\times x) (2x \\times -3) (5 \\times x) (5 \\times -3)\\]\n\\[= 2x^2 - 6x + 5x - 15\\]\n\\[=2x^2-x-15\\]"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#next-units",
