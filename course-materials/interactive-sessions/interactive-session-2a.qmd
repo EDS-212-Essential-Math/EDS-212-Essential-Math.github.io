@@ -26,7 +26,7 @@ $=\lim_{h\to 0}\frac{3(x^2+2xh+h^2)-x-h+1-3x^2+x-1)}{h}$
 
 $=\lim_{h\to 0}\frac{3x^2+6xh+3h^2-x-h+1-3x^2+x-1)}{h}$
 
-$=\lim_{h\to 0}\frac{3h^2+6xh-1}{h}$
+$=\lim_{h\to 0}\frac{3h^2+6xh-h}{h}$
 
 $=\lim_{h\to 0}3h+6x-1$
 

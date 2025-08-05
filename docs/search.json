@@ -102,14 +102,14 @@
     "href": "course-materials/interactive-sessions/interactive-session-2a.html",
     "title": "Interactive Session 2A",
     "section": "",
-    "text": "Use the definition of the derivative:\n\n\\[\\frac{df}{dx}=\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\]\n\n\\(f(x)=3x^2-x+1\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x)=3x^2-x+1\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x+h)^2-(x+h)+1-(3x^2-x+1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x^2+2xh+h^2)-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3x^2+6xh+3h^2-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3h^2+6xh-1}{h}\\)\n\\(=\\lim_{h\\to 0}3h+6x-1\\)\n\\(=6x-1\\)\n\n\n\n\n\\(G(t)=4-3t\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(G(t)=4-3t\\)\n\\(=\\lim_{h\\to 0}\\frac{4-3(t+h)-(4-3t)}{h}\\)\n\\(=-3\\)\n\n\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\\(\\frac{df}{dx} = -(3)(5)x^4+(2)(3)x^2-0\\)\n\\(\\frac{df}{dx} = -15x^4+6x^2\\)\n\n\n\n\n\\(C(z)=4.2z-8.7z^3\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{dC}{dz} = 4.2 - (3)(8.7)z^2\\)\n\\(\\frac{dC}{dz} = -26.1z^2 + 4.2\\)\n\n\n\n\n\n\n\nA researcher finds that the increase in algal biomass (\\(B\\), in grams) in their aquarium over time (\\(t\\), in hours) follows the function:\n\n\\[B(t) = 0.4 + 0.035t^2\\]\n\nWhat is the mass of algae in tank at 4.5 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(B(4.5) = 0.4 + 0.035(4.5)^2\\)\n\\(B(4.5) = 0.4 + 0.035(20.25)\\)\n\\(B(4.5) = 0.4 + 0.70875\\)\n\\(B(4.5) = 1.10875 \\ grams\\)\n\n\n\n\nAt what rate is biomass increasing in the tank after 10 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)t\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)(10)\\)\n\\(\\frac{dB}{dt} = 0.7 \\ grams/hr\\)"
+    "text": "Use the definition of the derivative:\n\n\\[\\frac{df}{dx}=\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\]\n\n\\(f(x)=3x^2-x+1\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x)=3x^2-x+1\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x+h)^2-(x+h)+1-(3x^2-x+1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x^2+2xh+h^2)-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3x^2+6xh+3h^2-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3h^2+6xh-h}{h}\\)\n\\(=\\lim_{h\\to 0}3h+6x-1\\)\n\\(=6x-1\\)\n\n\n\n\n\\(G(t)=4-3t\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(G(t)=4-3t\\)\n\\(=\\lim_{h\\to 0}\\frac{4-3(t+h)-(4-3t)}{h}\\)\n\\(=-3\\)\n\n\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\\(\\frac{df}{dx} = -(3)(5)x^4+(2)(3)x^2-0\\)\n\\(\\frac{df}{dx} = -15x^4+6x^2\\)\n\n\n\n\n\\(C(z)=4.2z-8.7z^3\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{dC}{dz} = 4.2 - (3)(8.7)z^2\\)\n\\(\\frac{dC}{dz} = -26.1z^2 + 4.2\\)\n\n\n\n\n\n\n\nA researcher finds that the increase in algal biomass (\\(B\\), in grams) in their aquarium over time (\\(t\\), in hours) follows the function:\n\n\\[B(t) = 0.4 + 0.035t^2\\]\n\nWhat is the mass of algae in tank at 4.5 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(B(4.5) = 0.4 + 0.035(4.5)^2\\)\n\\(B(4.5) = 0.4 + 0.035(20.25)\\)\n\\(B(4.5) = 0.4 + 0.70875\\)\n\\(B(4.5) = 1.10875 \\ grams\\)\n\n\n\n\nAt what rate is biomass increasing in the tank after 10 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)t\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)(10)\\)\n\\(\\frac{dB}{dt} = 0.7 \\ grams/hr\\)"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2a.html#derivatives-by-hand",
     "href": "course-materials/interactive-sessions/interactive-session-2a.html#derivatives-by-hand",
     "title": "Interactive Session 2A",
     "section": "",
-    "text": "Use the definition of the derivative:\n\n\\[\\frac{df}{dx}=\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\]\n\n\\(f(x)=3x^2-x+1\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x)=3x^2-x+1\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x+h)^2-(x+h)+1-(3x^2-x+1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x^2+2xh+h^2)-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3x^2+6xh+3h^2-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3h^2+6xh-1}{h}\\)\n\\(=\\lim_{h\\to 0}3h+6x-1\\)\n\\(=6x-1\\)\n\n\n\n\n\\(G(t)=4-3t\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(G(t)=4-3t\\)\n\\(=\\lim_{h\\to 0}\\frac{4-3(t+h)-(4-3t)}{h}\\)\n\\(=-3\\)\n\n\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\\(\\frac{df}{dx} = -(3)(5)x^4+(2)(3)x^2-0\\)\n\\(\\frac{df}{dx} = -15x^4+6x^2\\)\n\n\n\n\n\\(C(z)=4.2z-8.7z^3\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{dC}{dz} = 4.2 - (3)(8.7)z^2\\)\n\\(\\frac{dC}{dz} = -26.1z^2 + 4.2\\)\n\n\n\n\n\n\n\nA researcher finds that the increase in algal biomass (\\(B\\), in grams) in their aquarium over time (\\(t\\), in hours) follows the function:\n\n\\[B(t) = 0.4 + 0.035t^2\\]\n\nWhat is the mass of algae in tank at 4.5 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(B(4.5) = 0.4 + 0.035(4.5)^2\\)\n\\(B(4.5) = 0.4 + 0.035(20.25)\\)\n\\(B(4.5) = 0.4 + 0.70875\\)\n\\(B(4.5) = 1.10875 \\ grams\\)\n\n\n\n\nAt what rate is biomass increasing in the tank after 10 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)t\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)(10)\\)\n\\(\\frac{dB}{dt} = 0.7 \\ grams/hr\\)"
+    "text": "Use the definition of the derivative:\n\n\\[\\frac{df}{dx}=\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\]\n\n\\(f(x)=3x^2-x+1\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x)=3x^2-x+1\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x+h)^2-(x+h)+1-(3x^2-x+1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3(x^2+2xh+h^2)-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3x^2+6xh+3h^2-x-h+1-3x^2+x-1)}{h}\\)\n\\(=\\lim_{h\\to 0}\\frac{3h^2+6xh-h}{h}\\)\n\\(=\\lim_{h\\to 0}3h+6x-1\\)\n\\(=6x-1\\)\n\n\n\n\n\\(G(t)=4-3t\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(G(t)=4-3t\\)\n\\(=\\lim_{h\\to 0}\\frac{4-3(t+h)-(4-3t)}{h}\\)\n\\(=-3\\)\n\n\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(f(x) = -3x^5+2x^3-12\\)\n\\(\\frac{df}{dx} = -(3)(5)x^4+(2)(3)x^2-0\\)\n\\(\\frac{df}{dx} = -15x^4+6x^2\\)\n\n\n\n\n\\(C(z)=4.2z-8.7z^3\\)\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(\\frac{dC}{dz} = 4.2 - (3)(8.7)z^2\\)\n\\(\\frac{dC}{dz} = -26.1z^2 + 4.2\\)\n\n\n\n\n\n\n\nA researcher finds that the increase in algal biomass (\\(B\\), in grams) in their aquarium over time (\\(t\\), in hours) follows the function:\n\n\\[B(t) = 0.4 + 0.035t^2\\]\n\nWhat is the mass of algae in tank at 4.5 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(B(4.5) = 0.4 + 0.035(4.5)^2\\)\n\\(B(4.5) = 0.4 + 0.035(20.25)\\)\n\\(B(4.5) = 0.4 + 0.70875\\)\n\\(B(4.5) = 1.10875 \\ grams\\)\n\n\n\n\nAt what rate is biomass increasing in the tank after 10 hours?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\(B(t) = 0.4 + 0.035t^2\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)t\\)\n\\(\\frac{dB}{dt} = 0 + (0.035)(2)(10)\\)\n\\(\\frac{dB}{dt} = 0.7 \\ grams/hr\\)"
   },
   {
     "objectID": "course-materials/interactive-sessions/interactive-session-2a.html#derivatives-in-r-with-d",
@@ -1159,7 +1159,7 @@
     "href": "course-materials/slides/day1.1-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 1, Lecture 1\nCourse intro, algebra refresher\n\nAugust 4th, 2024"
+    "text": "EDS 212: Day 1, Lecture 1\nCourse intro, algebra refresher\n\nAugust 4th, 2025"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#welcome",
@@ -1187,7 +1187,7 @@
     "href": "course-materials/slides/day1.1-slides.html#math-evolution",
     "title": "",
     "section": "",
-    "text": "Maybe you’re thinking…\n\n\n\nSource: Michael Sandberg’s Data Visualization Blog"
+    "text": "Maybe you’re thinking…\n\n\n\n\n\n\n\n\n\n\n\nSource: Michael Sandberg’s Data Visualization Blog"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#why-math",
@@ -1243,7 +1243,7 @@
     "href": "course-materials/slides/day1.1-slides.html#notation-matters",
     "title": "",
     "section": "",
-    "text": "1. Notation matters\n\n\n\nSimplify the following: \\(6 \\div 3(4+2)\\)\nWhat would be a harder-to-misinterpret way to write this?\n\n\n\n\nANSWER: 12\nA harder to misinterpret way to write this: \\((6 \\div 3) \\times (4+2)\\)\n\n–"
+    "text": "1. Notation matters\n\n\n\nSimplify the following: \\(6 \\div 3(4+2)\\)\nWhat would be a harder-to-misinterpret way to write this?\n\n\n\n\n\n\n\n\n\n\n\n\nANSWER: 12\nA harder to misinterpret way to write this: \\((6 \\div 3) \\times (4+2)\\)\n\n–"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#takeaway",
@@ -1299,7 +1299,7 @@
     "href": "course-materials/slides/day1.1-slides.html#exponents-rules",
     "title": "",
     "section": "",
-    "text": "Exponent rules\n\n\n\\(x^ax^b=x^{a+b}\\) ; Example: \\(x^5x^3=x^{5+3}=x^8\\) ; Example: \\(2^2 \\times 2^2\\) = \\((2 \\times 2) \\times (2 \\times 2)\\) = \\(2^4\\)\n\n\n\n\\(\\frac{x^a}{x^b}=x^{a-b}\\) ; Example: \\(\\frac{z^5}{z^3}=z^{5-3}=z^2\\) ; Example: \\(\\frac{2^3}{2^2}\\) = \\(\\frac{2 \\times 2 \\times 2}{2 \\times 2}\\) = \\(2^1\\)\n\n\n\n\n\\(\\frac{1}{x^a}=x^{-a}\\) ; Example: \\(b^{-4x}=\\frac{1}{b^{4x}}\\)\n\n\n\n\n\\((x^a)^b=x^{ab}\\) ; Example: \\((2^3)^2=2^{3*2}=2^6=64\\)\n\n\n\n\n\\((\\frac{x}{y})^a=\\frac{x^a}{y^a}\\) ; Example: \\((\\frac{y}{2^2})^2=\\frac{y^2}{(2^2)^2}=\\frac{y^2}{2^4}=\\frac{y^2}{16}\\)\n\n\n\n\n\\((xy)^a=x^ay^a\\) ; Example: \\((3x)^2=3^2x^2\\)"
+    "text": "Exponent rules\n\n\n\\(x^ax^b=x^{a+b}\\) ; Example: \\(x^5x^3=x^{5+3}=x^8\\) ; Example: \\(2^2 \\times 2^2\\) = \\((2 \\times 2) \\times (2 \\times 2)\\) = \\(2^4\\)\n\n. . .\n\n\\(\\frac{x^a}{x^b}=x^{a-b}\\) ; Example: \\(\\frac{z^5}{z^3}=z^{5-3}=z^2\\) ; Example: \\(\\frac{2^3}{2^2}\\) = \\(\\frac{2 \\times 2 \\times 2}{2 \\times 2}\\) = \\(2^1\\)\n\n. . .\n\n\\(\\frac{1}{x^a}=x^{-a}\\) ; Example: \\(b^{-4x}=\\frac{1}{b^{4x}}\\)\n\n. . .\n\n\\((x^a)^b=x^{ab}\\) ; Example: \\((2^3)^2=2^{3*2}=2^6=64\\)\n\n. . .\n\n\\((\\frac{x}{y})^a=\\frac{x^a}{y^a}\\) ; Example: \\((\\frac{y}{2^2})^2=\\frac{y^2}{(2^2)^2}=\\frac{y^2}{2^4}=\\frac{y^2}{16}\\)\n\n. . .\n\n\\((xy)^a=x^ay^a\\) ; Example: \\((3x)^2=3^2x^2\\)"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#exponents-practice",
@@ -1313,7 +1313,7 @@
     "href": "course-materials/slides/day1.1-slides.html#FOIL",
     "title": "",
     "section": "",
-    "text": "Multiplying expressions (FOIL)\n\n\nFirst, Outside, Inside, Last\n\nExample:\n\\[(2x+5)(x-3)\\]\n\n\n\\[= (2x \\times x) (2x \\times -3) (5 \\times x) (5 \\times -3)\\]\n\\[= 2x^2 - 6x + 5x - 15\\]\n\\[=2x^2-x-15\\]"
+    "text": "Multiplying expressions (FOIL)\n\n\nFirst, Outside, Inside, Last\n\nExample:\n\\[(2x+5)(x-3)\\]\n. . .\n\n\\[= (2x \\times x) (2x \\times -3) (5 \\times x) (5 \\times -3)\\]\n\\[= 2x^2 - 6x + 5x - 15\\]\n\\[=2x^2-x-15\\]"
   },
   {
     "objectID": "course-materials/slides/day1.1-slides.html#next-units",
@@ -2441,5 +2441,12 @@
     "title": "Interactive Session 1A",
     "section": "",
     "text": "A file path is a string of characters that points to a unique location in your computer where a file or folder either currently exists or will exist. Different sections of the path are separated by a path separator. A path separator can be a forward slash (/) in Mac OS or backward slash (\\) in Windows/Linux.\n\n\n\n\n\n\nFind and copy an item’s filepath\n\n\n\n\n\n\nIn Mac OS, you can hold the Option and Shift keys and click on the item. In the pop-up window, you can then select “Copy [item name] as Pathname”.\nIn Windows and Linux, you can hold the Shift key and double click on the item. In the pop-up window, you can then select the “Copy as path”.\n\n\n\n\nFor ease of troubleshooting, set up your file organization like so:\n\nUnder your Documents folder, create a folder and name it MEDS\nYou can create a folder for each class (e.g., EDS-212, EDS-221, etc.) under MEDS"
+  },
+  {
+    "objectID": "course-materials/slides/day1.1-slides.html",
+    "href": "course-materials/slides/day1.1-slides.html",
+    "title": "",
+    "section": "",
+    "text": "EDS 212: Day 1, Lecture 1\nCourse intro, algebra refresher\n\nAugust 4th, 2025"
   }
 ]
