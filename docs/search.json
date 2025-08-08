@@ -641,7 +641,7 @@
     "href": "course-materials/slides/course-recap-slides.html#title-slide",
     "title": "",
     "section": "",
-    "text": "EDS 212: Day 5, End!\nCourse recap\n\nAugust 9th, 2024"
+    "text": "EDS 212: Day 5, End!\nCourse recap\n\nAugust 8th, 2025"
   },
   {
     "objectID": "course-materials/slides/course-recap-slides.html#day1a",
@@ -1992,14 +1992,14 @@
     "href": "course-materials/eod-practice/eod-day3.html#part-2-coding-practice",
     "title": "Day 3: Tasks & activities",
     "section": "Part 2: Coding practice",
-    "text": "Part 2: Coding practice\n\nCreate a new project (you may want to name it eds212-day3-tasks or something similar)\nSetup your local and remote repo using usethis::use_git() and usethis::use_github()\nIn a Quarto doc in your project:\n\n\nUsing the c() function, create and store two new vectors, called vec_a and vec_b, where \\(\\vec a = (1,6)\\) and \\(\\vec b = (2, 4)\\):\nCheck your by-hand solutions from Part 1 by finding the following in R:\n\n\\(\\vec a + \\vec b\\)\n\\(\\vec b - \\vec a\\)\n\\(2 \\vec a\\)\n\\(\\vec a \\cdot \\vec b\\)\n\n\n\nSave your quarto doc and Render\nOpen the Terminal outside of RStudio\nNavigate to your project directory using cd\nUse git status to check the status\nUse git add . to stage all changes\nUse git commit -m \"your commit message here\" to commit to your local repo\nUse git pull to check for remote changes\nUse git push to push changes to your remote repo\nGo to your remote repo for the project and check to see that the new updates are stored"
+    "text": "Part 2: Coding practice\n\nCreate a new project (you may want to name it eds212-day3-tasks or something similar)\nSetup your local and remote repo using usethis::use_git() and usethis::use_github()\nIn a Quarto doc in your project:\n\n\nUsing the c() function, create and store two new vectors, called vec_a and vec_b, where \\(\\vec a = (1,6)\\) and \\(\\vec b = (2, 4)\\):\nCheck your by-hand solutions from Part 1 by finding the following in R:\n\n\\(\\vec a + \\vec b\\)\n\\(\\vec b - \\vec a\\)\n\\(2 \\vec a\\)\n\\(\\vec a \\cdot \\vec b\\)\n\n\n\nSave your quarto doc and render\nNavigate to the Terminal pane in RStudio\nUse git status to check the status\nUse git add . to stage all changes\nUse git commit -m \"your commit message here\" to commit to your local repo\nUse git pull to check for remote changes\nUse git push to push changes to your remote repo\nGo to your remote repo for the project and check to see that the new updates are stored"
   },
   {
     "objectID": "course-materials/eod-practice/eod-day3.html#part-3-fork-clone-a-repo-use-the-code",
     "href": "course-materials/eod-practice/eod-day3.html#part-3-fork-clone-a-repo-use-the-code",
     "title": "Day 3: Tasks & activities",
     "section": "Part 3: Fork & clone a repo, use the code",
-    "text": "Part 3: Fork & clone a repo, use the code\n\nFork and clone this repo (which contains a Quarto document with code to numerically solve the SIR equations) to create a version-controlled project\nOnce you’ve created your project, open the sir.qmd file.\nRun all code in the .qmd (Cmd/Ctrl + Option + R, or go up to the run button and choose the last option “Run All”)\nExplore the code and output graph. What is the code doing? What is the graph telling us?\nMake small changes to the parameter values to see how the SIR models change. Are the changes expected?\nAfter trying out a few changes, save and knit your new output graph.\nStage, commit, pull, then push to your repo in the command line.\nCheck for your changes on GitHub. Are they there? Cool, done with Part 3.\n\n\n\nEnd Activity Session (Day 3)"
+    "text": "Part 3: Fork & clone a repo, use the code\n\nFork and clone this repo (which contains a Quarto document with code to numerically solve the SIR equations) to create a version-controlled project\nOnce you’ve created your project, open the sir.qmd file.\nRun all code in the .qmd (Cmd/Ctrl + Option + R, or go up to the run button and choose the last option “Run All”)\nExplore the code and output graph. What is the code doing? What is the graph telling us?\nMake small changes to the parameter values to see how the SIR models change. Are the changes expected?\nAfter trying out a few changes, save and render your new output graph.\nStage, commit, pull, then push to your repo in the command line.\nCheck for your changes on GitHub. Are they there? Cool, done with Part 3.\n\n\n\nEnd Activity Session (Day 3)"
   },
   {
     "objectID": "course-materials/eod-practice/eod-day4.html",
