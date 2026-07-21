@@ -1,7 +1,7 @@
 ---
 title: "Essential Math in Environmental Data Science"
 subtitle: "Master of Environmental Data Science (MEDS)"
-description: "Summer 2026"
+description: "Summer 2025"
 title-block-banner: false
 toc: false
 ---
@@ -16,16 +16,16 @@ knitr::include_graphics("images/horst-brainstorm-montage.png")
 ```
 
 ::: {.gray-text .center-text}
-*Artwork by [Allison Horst](https://allisonhorst.com/){target="_blank"}*
+*Artwork by [Allison Horst](https://allisonhorst.com/){:target="_blank"}*
 :::
 
 ## Course Description
 
-Quantitative skills are critical when working with, understanding, analyzing and gleaning insights from environmental data. In the intensive EDS 212 course, students will refresh fundamental skills in basic math (algebra, uni- and multivariate functions, units and unit conversions), differential and integral calculus, differential equations, linear algebra, statistics and probability, and reading, writing and evaluating logical operations.
+Quantitative skills are critical when working with, understanding, analyzing and gleaning insights from environmental data. In the intensive EDS 212 course, students will refresh fundamental skills in basic math (algebra, uni- and multivariate functions, units and unit conversions), derivative and integral calculus, differential equations, linear algebra, and reading, writing and evaluating logical operations.
 
 The goal of EDS 212 (Essential Math in Environmental Data Science) is to prepare incoming MEDS students with quantitative methods, skills, notation and language commonly used in environmental data science and required for their data science courses and projects in the program. By the end of the course, students should be able to: 
 
-- **Perform the following by hand:** convert units, basic algebra and working with logs and exponentials; write, interpret and evaluate univariate and multivariate functions; basic derivatives and integrals with univariate and multivariate functions; solve simple differential equations; basic operations with scalars, vectors and matrices; writing and evaluating logicals
+- **Perform the following by hand and in R:** convert units, basic algebra and working with logs and exponentials; write, interpret and evaluate univariate and multivariate functions; basic derivatives and integrals with univariate and multivariate functions; solve simple differential equations; basic operations with scalars, vectors and matrices; writing and evaluating logicals
 - **Explain and share examples** for how all topics in EDS 212 are useful and used in applied environmental data science
 - **Interpret** examples of applied math & models from environmental science case studies
 - **Work with peers** to solve group tasks, then **communicate** the process of problem solving to the rest of the class
@@ -43,7 +43,7 @@ The goal of EDS 212 (Essential Math in Environmental Data Science) is to prepare
 :::
 
 ```{r}
-#| eval: false 
+#| eval: true 
 #| echo: false
 #| fig-align: "center"
 #| out-width: "45%" 
@@ -51,9 +51,9 @@ knitr::include_graphics("images/ruth.png")
 ```
 
 ::: {.center-text}
-[**Carmen Galaz García**]{.teal-text}  
-**Email:** [c_galazgarcia@ucsb.edu](mailto::c_galazgarcia@ucsb.edu)  
-**Learn more:** [Bren profile](https://bren.ucsb.edu/people/carmen-galaz-garcia){target="_blank"}  
+[**Ruth Oliver**]{.teal-text}  
+**Email:** [rutholiver@ucsb.edu](mailto::rutholiver@ucsb.edu)  
+**Learn more:** [oliverlab.org](https://oliverlab.org/){target="_blank"}  
 :::
 
 :::
@@ -65,7 +65,7 @@ knitr::include_graphics("images/ruth.png")
 :::
 
 ```{r}
-#| eval: false 
+#| eval: true 
 #| echo: false
 #| fig-align: "center"
 #| out-width: "45%" 
@@ -73,9 +73,9 @@ knitr::include_graphics("images/alessandra.png")
 ```
 
 ::: {.center-text}
-[**Cella Schnabel**]{.teal-text}  
-**Email:** [cellaschnabel@bren.ucsb.edu](mailto::cellaschnabel@bren.ucsb.edu)   
-**Learn more:** [Bren profile](https://bren.ucsb.edu/people/cella-schnabel){target="_blank"}
+[**Alessandra Vidal Meza**]{.teal-text}  
+**Email:** [avidalmeza@bren.ucsb.edu](mailto::avidalmeza@bren.ucsb.edu)   
+**Learn more:** [avidalmeza.github.io](https://avidalmeza.github.io/){target="_blank"}
 :::
 
 :::
@@ -83,4 +83,4 @@ knitr::include_graphics("images/alessandra.png")
 
 ## Acknowledgements
 
-EDS 212 was originally developed and taught by [Allison Horst](https://allisonhorst.github.io/){target="_blank"} and then adapted by [Ruth Oliver](https://www.oliverlab.org){target="_blank"}. This new website houses materials which are *heavily* reused, adapted and expanded from, and inspired by Ruth and Allison's work. 
+EDS 212 was originally developed and taught by [Allison Horst](https://allisonhorst.github.io/){target="_blank"}. This new website houses materials which are *heavily* reused, adapted from, and inspired by Allison's original work.
